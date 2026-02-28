@@ -9,7 +9,7 @@
     "startSite":"02/16/2021",
     "onePageListNum":15,
     "singlePage":["about"],
-    "iconList":{"music":"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Z"},
+    "iconList":{"悟空源码网主页":"https://pub-e48ea883b4bd4aab9489ad31860393df.r2.dev/home-fill-16.svg"},
     "exlink":{"悟空源码网主页":"https://wukongymw.com"},
     "commentLabelColor":"#006b75",
     "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
