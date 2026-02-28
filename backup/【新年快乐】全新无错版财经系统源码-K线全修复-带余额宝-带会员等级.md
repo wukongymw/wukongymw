@@ -3,11 +3,11 @@
     <p>
         加入我们的 Telegram 群组以获取最新消息和支持！ 
         <br>
-        📢 <a href="https://t.me/dxw_chat" target="_blank">点击这里加入 TG 群</a>
+        📢 <a href="https://t.me/wukongym" target="_blank">点击这里加入 TG 群</a>
         <br><br>
         如需帮助，请联系唯一客服：
         <br>
-        🤖 <a href="https://t.me/dxw_666_2" target="_blank">点击这里联系客服</a>
+        🤖 <a href="https://t.me/wukongymw" target="_blank">点击这里联系客服</a>
     </p>
   </div>
 </div>
