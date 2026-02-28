@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://pub-e48ea883b4bd4aab9489ad31860393df.r2.dev/favicon.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+北京PK10：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10001
+天津时时彩: https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10003
+新疆时时彩: https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10004
+广东11选5: https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10006
+江苏快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10007
+澳洲幸运5：https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10010
+澳洲幸运10：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10012
+澳洲幸运20：https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10013
+北京快乐8：https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10014
+江西11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10015
+江苏11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10016
+安徽11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10017
+上海11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10018
+辽宁11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10019
+湖北11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10020
+广西11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10022
+吉林11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10023
+内蒙古11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10024
+浙江11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10025
+广西快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10026
+吉林快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10027
+河北快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10028
+内蒙古快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10029
+安徽快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10030
+福建快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10031
+湖北快3: https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10032
+北京快3: https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10033
+极速飞艇：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10035
+极速时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10036
+极速赛车：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10037
+广西快乐十分：https://api.api68.com/gxklsf/getLotteryInfo.do?lotCode=10038
+福彩双色球：https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10039
+超级大乐透：https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10040
+福彩3D：https://api.api68.com/QuanGuoCai/getLotteryInfo1.do?lotCode=10041
+福彩七乐彩：https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10042
+体彩排列3：https://api.api68.com/QuanGuoCai/getLotteryInfo1.do?lotCode=10043
+体彩排列5：https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10044
+体彩七星彩：https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10045
+pc蛋蛋幸运28：https://api.api68.com/LuckTwenty/getPcLucky28.do
+台湾宾果：https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10047
+香港彩：https://1680660.com/smallSix/findSmallSixInfo.do
+极速六合彩：https://api.api68.com/speedSix/findSpeedSixInfo.do
+极速快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10052
+极速快乐8：https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10054
+极速11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10055
+幸运飞艇：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10057
+SG飞艇：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10058
+幸运时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10059
+重庆欢乐生肖：https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10060
+
+<strong>各彩种历史开奖记录的api接口：</strong>
+
+北京PK10 https://api.api68.com/pks/getPksHistoryList.do?lotCode=10001&amp;date=2019-04-15
+天津时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10003&amp;date=2019-04-15
+新疆时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10004&amp;date=2019-04-15
+广东11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10006&amp;date=2019-04-15
+江苏快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10007&amp;date=2019-04-15
+澳洲幸运5：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10010&amp;date=2019-04-15
+澳洲幸运10：https://api.api68.com/pks/getPksHistoryList.do?lotCode=10012&amp;date=2019-04-15
+澳洲幸运20：https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10013&amp;date=2019-04-15
+北京快乐8：https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10014&amp;date=2019-04-15
+江西11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10015&amp;date=2019-04-15
+江苏11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10016&amp;date=2019-04-16
+安徽11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10017&amp;date=2019-04-17
+上海11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10018&amp;date=2019-04-18
+辽宁11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10019&amp;date=2019-04-19
+湖北11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10020&amp;date=2019-04-20
+广西11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10022&amp;date=2019-04-22
+吉林11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10023&amp;date=2019-04-23
+内蒙古11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10024&amp;date=2019-04-24
+浙江11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10025&amp;date=2019-04-25
+广西快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10026&amp;date=2019-04-15
+吉林快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10027&amp;date=2019-04-16
+河北快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10028&amp;date=2019-04-17
+内蒙古快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10029&amp;date=2019-04-18
+安徽快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10030&amp;date=2019-04-19
+福建快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10031&amp;date=2019-04-20
+湖北快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10032&amp;date=2019-04-21
+北京快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10033&amp;date=2019-04-22
+极速飞艇：https://api.api68.com/pks/getPksHistoryList.do?lotCode=10035&amp;date=2019-04-15
+极速时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10036&amp;date=2019-04-15
+极速赛车：https://api.api68.com/pks/getPksHistoryList.do?lotCode=10037&amp;date=2019-04-15
+广西快乐十分：https://api.api68.com/gxklsf/getHistoryLotteryInfo.do?lotCode=10038&amp;date=2019-04-15
+福彩双色球：https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10039
+超级大乐透：https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10040
+福彩3D：https://api.api68.com/QuanGuoCai/getLotteryInfoList.do?lotCode=10041
+福彩七乐彩：https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10042
+体彩排列3：https://api.api68.com/QuanGuoCai/getLotteryInfoList.do?lotCode=10043
+体彩排列5: https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10044
+体彩七星彩: https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10045
+pc蛋蛋幸运28: https://api.api68.com/LuckTwenty/getPcLucky28List.do?date=2019-04-15
+台湾宾果：https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10047&amp;date=2019-04-15
+香港彩：https://1680660.com/smallSix/findSmallSixHistory.do?type=1
+极速六合彩：https://api.api68.com/speedSix/findSpeedSixHistory.do?type=1&amp;date=2019-04-15
+极速快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10052&amp;date=2019-04-15
+极速快乐8：https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10054&amp;date=2019-04-15
+极速11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10055&amp;date=2019-04-25
+幸运飞艇：https://api.api68.com/pks/getPksHistoryList.do?lotCode=10057&amp;date=2019-04-15
+SG飞艇：https://api.api68.com/pks/getPksHistoryList.do?lotCode=10058&amp;date=2019-04-15
+幸运时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10059&amp;date=2019-04-15
+重庆欢乐生肖：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10060&amp;date=2019-04-15
+
+<!-- ##{'timestamp':1669433461}## -->。">
+<meta property="og:title" content="免费api接口文档/168开奖网免费api地址大全">
+<meta property="og:description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+北京PK10：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10001
+天津时时彩: https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10003
+新疆时时彩: https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10004
+广东11选5: https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10006
+江苏快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10007
+澳洲幸运5：https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10010
+澳洲幸运10：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10012
+澳洲幸运20：https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10013
+北京快乐8：https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10014
+江西11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10015
+江苏11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10016
+安徽11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10017
+上海11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10018
+辽宁11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10019
+湖北11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10020
+广西11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10022
+吉林11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10023
+内蒙古11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10024
+浙江11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10025
+广西快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10026
+吉林快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10027
+河北快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10028
+内蒙古快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10029
+安徽快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10030
+福建快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10031
+湖北快3: https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10032
+北京快3: https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10033
+极速飞艇：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10035
+极速时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10036
+极速赛车：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10037
+广西快乐十分：https://api.api68.com/gxklsf/getLotteryInfo.do?lotCode=10038
+福彩双色球：https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10039
+超级大乐透：https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10040
+福彩3D：https://api.api68.com/QuanGuoCai/getLotteryInfo1.do?lotCode=10041
+福彩七乐彩：https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10042
+体彩排列3：https://api.api68.com/QuanGuoCai/getLotteryInfo1.do?lotCode=10043
+体彩排列5：https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10044
+体彩七星彩：https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10045
+pc蛋蛋幸运28：https://api.api68.com/LuckTwenty/getPcLucky28.do
+台湾宾果：https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10047
+香港彩：https://1680660.com/smallSix/findSmallSixInfo.do
+极速六合彩：https://api.api68.com/speedSix/findSpeedSixInfo.do
+极速快3：https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10052
+极速快乐8：https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10054
+极速11选5：https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10055
+幸运飞艇：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10057
+SG飞艇：https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10058
+幸运时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10059
+重庆欢乐生肖：https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10060
+
+<strong>各彩种历史开奖记录的api接口：</strong>
+
+北京PK10 https://api.api68.com/pks/getPksHistoryList.do?lotCode=10001&amp;date=2019-04-15
+天津时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10003&amp;date=2019-04-15
+新疆时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10004&amp;date=2019-04-15
+广东11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10006&amp;date=2019-04-15
+江苏快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10007&amp;date=2019-04-15
+澳洲幸运5：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10010&amp;date=2019-04-15
+澳洲幸运10：https://api.api68.com/pks/getPksHistoryList.do?lotCode=10012&amp;date=2019-04-15
+澳洲幸运20：https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10013&amp;date=2019-04-15
+北京快乐8：https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10014&amp;date=2019-04-15
+江西11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10015&amp;date=2019-04-15
+江苏11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10016&amp;date=2019-04-16
+安徽11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10017&amp;date=2019-04-17
+上海11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10018&amp;date=2019-04-18
+辽宁11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10019&amp;date=2019-04-19
+湖北11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10020&amp;date=2019-04-20
+广西11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10022&amp;date=2019-04-22
+吉林11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10023&amp;date=2019-04-23
+内蒙古11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10024&amp;date=2019-04-24
+浙江11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10025&amp;date=2019-04-25
+广西快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10026&amp;date=2019-04-15
+吉林快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10027&amp;date=2019-04-16
+河北快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10028&amp;date=2019-04-17
+内蒙古快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10029&amp;date=2019-04-18
+安徽快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10030&amp;date=2019-04-19
+福建快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10031&amp;date=2019-04-20
+湖北快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10032&amp;date=2019-04-21
+北京快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10033&amp;date=2019-04-22
+极速飞艇：https://api.api68.com/pks/getPksHistoryList.do?lotCode=10035&amp;date=2019-04-15
+极速时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10036&amp;date=2019-04-15
+极速赛车：https://api.api68.com/pks/getPksHistoryList.do?lotCode=10037&amp;date=2019-04-15
+广西快乐十分：https://api.api68.com/gxklsf/getHistoryLotteryInfo.do?lotCode=10038&amp;date=2019-04-15
+福彩双色球：https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10039
+超级大乐透：https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10040
+福彩3D：https://api.api68.com/QuanGuoCai/getLotteryInfoList.do?lotCode=10041
+福彩七乐彩：https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10042
+体彩排列3：https://api.api68.com/QuanGuoCai/getLotteryInfoList.do?lotCode=10043
+体彩排列5: https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10044
+体彩七星彩: https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10045
+pc蛋蛋幸运28: https://api.api68.com/LuckTwenty/getPcLucky28List.do?date=2019-04-15
+台湾宾果：https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10047&amp;date=2019-04-15
+香港彩：https://1680660.com/smallSix/findSmallSixHistory.do?type=1
+极速六合彩：https://api.api68.com/speedSix/findSpeedSixHistory.do?type=1&amp;date=2019-04-15
+极速快3：https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10052&amp;date=2019-04-15
+极速快乐8：https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10054&amp;date=2019-04-15
+极速11选5：https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10055&amp;date=2019-04-25
+幸运飞艇：https://api.api68.com/pks/getPksHistoryList.do?lotCode=10057&amp;date=2019-04-15
+SG飞艇：https://api.api68.com/pks/getPksHistoryList.do?lotCode=10058&amp;date=2019-04-15
+幸运时时彩：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10059&amp;date=2019-04-15
+重庆欢乐生肖：https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10060&amp;date=2019-04-15
+
+<!-- ##{'timestamp':1669433461}## -->。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wukongymw.github.io/wukongymw//post/mian-fei-api-jie-kou-wen-dang--168-kai-jiang-wang-mian-fei-api-di-zhi-da-quan.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Meekdai/meekdai.github.io/logo64.jpg">
+<title>免费api接口文档/168开奖网免费api地址大全</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+<style>.dian{display:flex}.dian>a{margin:10px;color:#ff5722}.downurl>.active{color:#ef093a;font-size:15pt}.help>p{font-size:1.5rem}.cur{color:#ef093a;font-size:15pt}#user-content-ul_Address li>a{margin:10px;color:#ff5722}#user-content-ul_Address li{list-style:none;margin-left:-42px;display:flex}#user-content-ul_Address .address-wrap .on{list-style:none}ul>li{list-style:none}#user-content-sc_notice{color:#fff;background:#034cff url('/static/img/sc_notice.png') -1px -1px no-repeat;border:1px solid #034cff;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px;border-radius:10px}#user-content-sc_warn{color:#ad9948;background:#fff4b9 url('/static/img/sc_warn.png') -1px -1px no-repeat;border:1px solid #eac946;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_error{color:#fff;background:#00bd3f;overflow:hidden;margin:10px 0px;padding:12px 15px 0px 35px;border-radius:10px;height:78px;display:inline-table;}#user-content-sc_error p{line-height:1;}#user-content-sc_error a{color:#000000;}#user-content-sc_tips{color:#777;background:#eaeaea url('/static/img/sc_tips.png') -1px -1px no-repeat;border:1px solid #ccc;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_blue{color:#1ba1e2;background:rgba(27,161,226,0.26) url('/static/img/sc_blue.png') -1px -1px no-repeat;border:1px solid #1ba1e2;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_black{border-width:1px 4px 4px 1px;border-style:solid;border-color:#3e3e3e;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_xuk{border:2px dashed rgb(41,170,227);background-color:rgb(248,247,245);margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_lvb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #05B536;background:#FFF}#user-content-sc_redb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #ED0505;background:#FFF}#user-content-sc_organge{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #EC8006;background:#FFF}#user-content-sc_fankui{color:#fff;background:#00bd3f url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #00bd3f;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_shuoming{color:#fff;background:#ff4545 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #ff4545;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_jietu{color:#fff;background:#35b8e0 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #35b8e0;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}.article-content p{padding:15px;background:#f8f9fa;border-radius:5px}#user-content-timibbs12{display:flex;flex-wrap:wrap}#user-content-timibbs12 p{display:contents;width:33.33%}#user-content-timibbs15{color:#ffffff;background:#FF5722;border:1px solid #FF5722;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin:3% 43%}.post-content .aligncenter{border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto}#user-content-timibbs12 a{color:#03a9f4;flex:1 0 33.33%;padding:3px;display:flex;margin-bottom:5px;}#user-content-sc_error b{display:block;margin-top:5px;}#user-content-announcement{border:1px solid #ddd;padding:20px;margin:30px 0 10px;background-color:#f9f9f9;border-radius:15px;font-family:Arial,sans-serif;text-align: center;}#user-content-announcement h2{color:#007bff;margin:0 0 10px;}#user-content-announcement p{margin:0;font-size:1.1rem;color:#333;}#user-content-announcement a{color:#007bff;text-decoration:none;}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">免费api接口文档/168开奖网免费api地址大全</h1>
+<div class="title-right">
+    <a href="https://wukongymw.github.io/wukongymw/" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/wukongymw/wukongymw/issues/70" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><div id="user-content-announcement"><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href="https://t.me/wukongym" rel="nofollow">点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href="https://t.me/wukongymw" rel="nofollow">点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+<p>北京PK10：<a href="https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10001" rel="nofollow">https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10001</a><br>
+天津时时彩: <a href="https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10003" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10003</a><br>
+新疆时时彩: <a href="https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10004" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10004</a><br>
+广东11选5: <a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10006" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10006</a><br>
+江苏快3：<a href="https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10007" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10007</a><br>
+澳洲幸运5：<a href="https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10010" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10010</a><br>
+澳洲幸运10：<a href="https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10012" rel="nofollow">https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10012</a><br>
+澳洲幸运20：<a href="https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10013" rel="nofollow">https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10013</a><br>
+北京快乐8：<a href="https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10014" rel="nofollow">https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10014</a><br>
+江西11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10015" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10015</a><br>
+江苏11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10016" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10016</a><br>
+安徽11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10017" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10017</a><br>
+上海11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10018" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10018</a><br>
+辽宁11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10019" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10019</a><br>
+湖北11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10020" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10020</a><br>
+广西11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10022" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10022</a><br>
+吉林11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10023" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10023</a><br>
+内蒙古11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10024" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10024</a><br>
+浙江11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10025" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10025</a><br>
+广西快3：<a href="https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10026" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10026</a><br>
+吉林快3：<a href="https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10027" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10027</a><br>
+河北快3：<a href="https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10028" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10028</a><br>
+内蒙古快3：<a href="https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10029" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10029</a><br>
+安徽快3：<a href="https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10030" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10030</a><br>
+福建快3：<a href="https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10031" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10031</a><br>
+湖北快3: <a href="https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10032" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10032</a><br>
+北京快3: <a href="https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10033" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10033</a><br>
+极速飞艇：<a href="https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10035" rel="nofollow">https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10035</a><br>
+极速时时彩：<a href="https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10036" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10036</a><br>
+极速赛车：<a href="https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10037" rel="nofollow">https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10037</a><br>
+广西快乐十分：<a href="https://api.api68.com/gxklsf/getLotteryInfo.do?lotCode=10038" rel="nofollow">https://api.api68.com/gxklsf/getLotteryInfo.do?lotCode=10038</a><br>
+福彩双色球：<a href="https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10039" rel="nofollow">https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10039</a><br>
+超级大乐透：<a href="https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10040" rel="nofollow">https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10040</a><br>
+福彩3D：<a href="https://api.api68.com/QuanGuoCai/getLotteryInfo1.do?lotCode=10041" rel="nofollow">https://api.api68.com/QuanGuoCai/getLotteryInfo1.do?lotCode=10041</a><br>
+福彩七乐彩：<a href="https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10042" rel="nofollow">https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10042</a><br>
+体彩排列3：<a href="https://api.api68.com/QuanGuoCai/getLotteryInfo1.do?lotCode=10043" rel="nofollow">https://api.api68.com/QuanGuoCai/getLotteryInfo1.do?lotCode=10043</a><br>
+体彩排列5：<a href="https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10044" rel="nofollow">https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10044</a><br>
+体彩七星彩：<a href="https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10045" rel="nofollow">https://api.api68.com/QuanGuoCai/getLotteryInfo.do?lotCode=10045</a><br>
+pc蛋蛋幸运28：<a href="https://api.api68.com/LuckTwenty/getPcLucky28.do" rel="nofollow">https://api.api68.com/LuckTwenty/getPcLucky28.do</a><br>
+台湾宾果：<a href="https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10047" rel="nofollow">https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10047</a><br>
+香港彩：<a href="https://1680660.com/smallSix/findSmallSixInfo.do" rel="nofollow">https://1680660.com/smallSix/findSmallSixInfo.do</a><br>
+极速六合彩：<a href="https://api.api68.com/speedSix/findSpeedSixInfo.do" rel="nofollow">https://api.api68.com/speedSix/findSpeedSixInfo.do</a><br>
+极速快3：<a href="https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10052" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getBaseJSFastThree.do?lotCode=10052</a><br>
+极速快乐8：<a href="https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10054" rel="nofollow">https://api.api68.com/LuckTwenty/getBaseLuckTewnty.do?lotCode=10054</a><br>
+极速11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10055" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveInfo.do?lotCode=10055</a><br>
+幸运飞艇：<a href="https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10057" rel="nofollow">https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10057</a><br>
+SG飞艇：<a href="https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10058" rel="nofollow">https://api.api68.com/pks/getLotteryPksInfo.do?lotCode=10058</a><br>
+幸运时时彩：<a href="https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10059" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10059</a><br>
+重庆欢乐生肖：<a href="https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10060" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCai.do?lotCode=10060</a></p>
+<p><strong>各彩种历史开奖记录的api接口：</strong></p>
+<p>北京PK10 <a href="https://api.api68.com/pks/getPksHistoryList.do?lotCode=10001&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/pks/getPksHistoryList.do?lotCode=10001&amp;amp;date=2019-04-15</a><br>
+天津时时彩：<a href="https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10003&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10003&amp;amp;date=2019-04-15</a><br>
+新疆时时彩：<a href="https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10004&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10004&amp;amp;date=2019-04-15</a><br>
+广东11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10006&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10006&amp;amp;date=2019-04-15</a><br>
+江苏快3：<a href="https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10007&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10007&amp;amp;date=2019-04-15</a><br>
+澳洲幸运5：<a href="https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10010&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10010&amp;amp;date=2019-04-15</a><br>
+澳洲幸运10：<a href="https://api.api68.com/pks/getPksHistoryList.do?lotCode=10012&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/pks/getPksHistoryList.do?lotCode=10012&amp;amp;date=2019-04-15</a><br>
+澳洲幸运20：<a href="https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10013&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10013&amp;amp;date=2019-04-15</a><br>
+北京快乐8：<a href="https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10014&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10014&amp;amp;date=2019-04-15</a><br>
+江西11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10015&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10015&amp;amp;date=2019-04-15</a><br>
+江苏11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10016&amp;amp;date=2019-04-16" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10016&amp;amp;date=2019-04-16</a><br>
+安徽11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10017&amp;amp;date=2019-04-17" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10017&amp;amp;date=2019-04-17</a><br>
+上海11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10018&amp;amp;date=2019-04-18" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10018&amp;amp;date=2019-04-18</a><br>
+辽宁11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10019&amp;amp;date=2019-04-19" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10019&amp;amp;date=2019-04-19</a><br>
+湖北11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10020&amp;amp;date=2019-04-20" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10020&amp;amp;date=2019-04-20</a><br>
+广西11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10022&amp;amp;date=2019-04-22" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10022&amp;amp;date=2019-04-22</a><br>
+吉林11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10023&amp;amp;date=2019-04-23" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10023&amp;amp;date=2019-04-23</a><br>
+内蒙古11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10024&amp;amp;date=2019-04-24" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10024&amp;amp;date=2019-04-24</a><br>
+浙江11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10025&amp;amp;date=2019-04-25" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10025&amp;amp;date=2019-04-25</a><br>
+广西快3：<a href="https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10026&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10026&amp;amp;date=2019-04-15</a><br>
+吉林快3：<a href="https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10027&amp;amp;date=2019-04-16" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10027&amp;amp;date=2019-04-16</a><br>
+河北快3：<a href="https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10028&amp;amp;date=2019-04-17" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10028&amp;amp;date=2019-04-17</a><br>
+内蒙古快3：<a href="https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10029&amp;amp;date=2019-04-18" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10029&amp;amp;date=2019-04-18</a><br>
+安徽快3：<a href="https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10030&amp;amp;date=2019-04-19" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10030&amp;amp;date=2019-04-19</a><br>
+福建快3：<a href="https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10031&amp;amp;date=2019-04-20" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10031&amp;amp;date=2019-04-20</a><br>
+湖北快3：<a href="https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10032&amp;amp;date=2019-04-21" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10032&amp;amp;date=2019-04-21</a><br>
+北京快3：<a href="https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10033&amp;amp;date=2019-04-22" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10033&amp;amp;date=2019-04-22</a><br>
+极速飞艇：<a href="https://api.api68.com/pks/getPksHistoryList.do?lotCode=10035&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/pks/getPksHistoryList.do?lotCode=10035&amp;amp;date=2019-04-15</a><br>
+极速时时彩：<a href="https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10036&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10036&amp;amp;date=2019-04-15</a><br>
+极速赛车：<a href="https://api.api68.com/pks/getPksHistoryList.do?lotCode=10037&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/pks/getPksHistoryList.do?lotCode=10037&amp;amp;date=2019-04-15</a><br>
+广西快乐十分：<a href="https://api.api68.com/gxklsf/getHistoryLotteryInfo.do?lotCode=10038&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/gxklsf/getHistoryLotteryInfo.do?lotCode=10038&amp;amp;date=2019-04-15</a><br>
+福彩双色球：<a href="https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10039" rel="nofollow">https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10039</a><br>
+超级大乐透：<a href="https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10040" rel="nofollow">https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10040</a><br>
+福彩3D：<a href="https://api.api68.com/QuanGuoCai/getLotteryInfoList.do?lotCode=10041" rel="nofollow">https://api.api68.com/QuanGuoCai/getLotteryInfoList.do?lotCode=10041</a><br>
+福彩七乐彩：<a href="https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10042" rel="nofollow">https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10042</a><br>
+体彩排列3：<a href="https://api.api68.com/QuanGuoCai/getLotteryInfoList.do?lotCode=10043" rel="nofollow">https://api.api68.com/QuanGuoCai/getLotteryInfoList.do?lotCode=10043</a><br>
+体彩排列5: <a href="https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10044" rel="nofollow">https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10044</a><br>
+体彩七星彩: <a href="https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10045" rel="nofollow">https://api.api68.com/QuanGuoCai/getHistoryLotteryInfo.do?lotCode=10045</a><br>
+pc蛋蛋幸运28: <a href="https://api.api68.com/LuckTwenty/getPcLucky28List.do?date=2019-04-15" rel="nofollow">https://api.api68.com/LuckTwenty/getPcLucky28List.do?date=2019-04-15</a><br>
+台湾宾果：<a href="https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10047&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10047&amp;amp;date=2019-04-15</a><br>
+香港彩：<a href="https://1680660.com/smallSix/findSmallSixHistory.do?type=1" rel="nofollow">https://1680660.com/smallSix/findSmallSixHistory.do?type=1</a><br>
+极速六合彩：<a href="https://api.api68.com/speedSix/findSpeedSixHistory.do?type=1&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/speedSix/findSpeedSixHistory.do?type=1&amp;amp;date=2019-04-15</a><br>
+极速快3：<a href="https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10052&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/lotteryJSFastThree/getJSFastThreeList.do?lotCode=10052&amp;amp;date=2019-04-15</a><br>
+极速快乐8：<a href="https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10054&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/LuckTwenty/getBaseLuckTwentyList.do?lotCode=10054&amp;amp;date=2019-04-15</a><br>
+极速11选5：<a href="https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10055&amp;amp;date=2019-04-25" rel="nofollow">https://api.api68.com/ElevenFive/getElevenFiveList.do?lotCode=10055&amp;amp;date=2019-04-25</a><br>
+幸运飞艇：<a href="https://api.api68.com/pks/getPksHistoryList.do?lotCode=10057&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/pks/getPksHistoryList.do?lotCode=10057&amp;amp;date=2019-04-15</a><br>
+SG飞艇：<a href="https://api.api68.com/pks/getPksHistoryList.do?lotCode=10058&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/pks/getPksHistoryList.do?lotCode=10058&amp;amp;date=2019-04-15</a><br>
+幸运时时彩：<a href="https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10059&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10059&amp;amp;date=2019-04-15</a><br>
+重庆欢乐生肖：<a href="https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10060&amp;amp;date=2019-04-15" rel="nofollow">https://api.api68.com/CQShiCai/getBaseCQShiCaiList.do?lotCode=10060&amp;amp;date=2019-04-15</a></p>
+</div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处-悟空源码网 wukongymw.com</div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wukongymw.github.io/wukongymw/">悟空源码网 wkym.cc</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("02/16/2021"!=""){
+    var startSite=new Date("02/16/2021");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</html>
