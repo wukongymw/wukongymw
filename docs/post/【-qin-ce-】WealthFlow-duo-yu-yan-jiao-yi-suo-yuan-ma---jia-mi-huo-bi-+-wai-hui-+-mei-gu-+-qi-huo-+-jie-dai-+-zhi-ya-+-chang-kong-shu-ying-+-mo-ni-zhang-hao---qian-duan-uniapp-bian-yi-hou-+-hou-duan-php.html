@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://pub-e48ea883b4bd4aab9489ad31860393df.r2.dev/favicon.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_error'>本套程序已经过悟空源码技术人员测试，如需搭建请直接联系客服：<a href='http://t.me/wukongymw'>@wukongymw</a>
+<b>解压密码：wukongymw.com</b></div>
+<div id='sc_shuoming'>源码说明</div>
+WealthFlow多语言交易所源码/加密货币+外汇+美股+期货+借贷+质押+场控输赢+模拟账号/前端uniapp编译后+后端php
+<div id='sc_fankui'>测试反馈</div>
+测试环境：Linux系统Ubuntu22、宝塔面板、Nginx、PHP7.2、MySQL5.7，运行目录public，伪静态选择thinkphp，建议开启SSL
+
+语言：6种，看图
+
+这一套的功能非常多，很多功能都有，包括加密货币、外汇产品、美股产品、期货产品等，这些都可以设置期权交易属性，还有杠杆交易、借贷、质押这些功能，外汇和股票可以需要换接口
+
+控制的话没有测试，就连k线都不需要你配置服务器环境，只要服务器ip在火币允许的名单内，前端可以直接调用k线数据，对于新手比较友好
+
+控制分为用户场控（全赢、全输、涨赢跌随机、跌赢涨随机、涨赢跌输、跌赢涨输），杠杆交易也可以控输赢
+
+另外这一套可以设置任何币种为平台币，后台有设置平台币k线，我没找到在哪里，你们自己研究一下
+
+前端还有试玩账号登录，这个我觉得也有卖点，解决了用户体验时需要注册的繁琐过程
+
+很遗憾的是，这套前端是编译后的，没有纯源码，要不然卖上万都是随随便便的事，编译后的也有价值哦，自己拿去参考
+
+数据库修改：config/database.php 里面将 timibbs_jys120 改成你自己的，或者你自己设置账号密码都为 timibbs_jys120 即可
+
+前端修改：新建网站将 jys120-h5.timibbs.cc_20241209_015131.tar.gz 前端文件上传并解压，使用宝塔的全局搜索软件搜索 jys120.timibbs.cc 改为你自己的后端域名，同时需要做反向代理用于代理api
+
+前端：https://jys120-h5.timibbs.cc/
+用模拟账号登录
+
+后台：https://jys120.timibbs.cc/timibbs
+账号：admin
+密码：timibbs.net
+
+伪静态添加反向代理：
+<pre class='pure-highlightjs line-numbers'><code class='language-one'>location /api {
+	# 此处改为后端的域名 需要添加/
+	proxy_pass https://ceshi11.wkym.cc/; 
+	proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection 'upgrade';
+	proxy_http_version 1.1;
+	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	proxy_set_header Host $host;
+  proxy_set_header X-Real-IP $remote_addr;
+}
+
+</code></pre>
+添加上面反向代理的话就不要做前后端分离，直接放前端解压到public根目录，修改一下默认文档 index.html 为第一个就可以了。">
+<meta property="og:title" content="【亲测】WealthFlow多语言交易所源码/加密货币+外汇+美股+期货+借贷+质押+场控输赢+模拟账号/前端uniapp编译后+后端php">
+<meta property="og:description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_error'>本套程序已经过悟空源码技术人员测试，如需搭建请直接联系客服：<a href='http://t.me/wukongymw'>@wukongymw</a>
+<b>解压密码：wukongymw.com</b></div>
+<div id='sc_shuoming'>源码说明</div>
+WealthFlow多语言交易所源码/加密货币+外汇+美股+期货+借贷+质押+场控输赢+模拟账号/前端uniapp编译后+后端php
+<div id='sc_fankui'>测试反馈</div>
+测试环境：Linux系统Ubuntu22、宝塔面板、Nginx、PHP7.2、MySQL5.7，运行目录public，伪静态选择thinkphp，建议开启SSL
+
+语言：6种，看图
+
+这一套的功能非常多，很多功能都有，包括加密货币、外汇产品、美股产品、期货产品等，这些都可以设置期权交易属性，还有杠杆交易、借贷、质押这些功能，外汇和股票可以需要换接口
+
+控制的话没有测试，就连k线都不需要你配置服务器环境，只要服务器ip在火币允许的名单内，前端可以直接调用k线数据，对于新手比较友好
+
+控制分为用户场控（全赢、全输、涨赢跌随机、跌赢涨随机、涨赢跌输、跌赢涨输），杠杆交易也可以控输赢
+
+另外这一套可以设置任何币种为平台币，后台有设置平台币k线，我没找到在哪里，你们自己研究一下
+
+前端还有试玩账号登录，这个我觉得也有卖点，解决了用户体验时需要注册的繁琐过程
+
+很遗憾的是，这套前端是编译后的，没有纯源码，要不然卖上万都是随随便便的事，编译后的也有价值哦，自己拿去参考
+
+数据库修改：config/database.php 里面将 timibbs_jys120 改成你自己的，或者你自己设置账号密码都为 timibbs_jys120 即可
+
+前端修改：新建网站将 jys120-h5.timibbs.cc_20241209_015131.tar.gz 前端文件上传并解压，使用宝塔的全局搜索软件搜索 jys120.timibbs.cc 改为你自己的后端域名，同时需要做反向代理用于代理api
+
+前端：https://jys120-h5.timibbs.cc/
+用模拟账号登录
+
+后台：https://jys120.timibbs.cc/timibbs
+账号：admin
+密码：timibbs.net
+
+伪静态添加反向代理：
+<pre class='pure-highlightjs line-numbers'><code class='language-one'>location /api {
+	# 此处改为后端的域名 需要添加/
+	proxy_pass https://ceshi11.wkym.cc/; 
+	proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection 'upgrade';
+	proxy_http_version 1.1;
+	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	proxy_set_header Host $host;
+  proxy_set_header X-Real-IP $remote_addr;
+}
+
+</code></pre>
+添加上面反向代理的话就不要做前后端分离，直接放前端解压到public根目录，修改一下默认文档 index.html 为第一个就可以了。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wukongymw.github.io/wukongymw//post/%E3%80%90-qin-ce-%E3%80%91WealthFlow-duo-yu-yan-jiao-yi-suo-yuan-ma---jia-mi-huo-bi-%2B-wai-hui-%2B-mei-gu-%2B-qi-huo-%2B-jie-dai-%2B-zhi-ya-%2B-chang-kong-shu-ying-%2B-mo-ni-zhang-hao---qian-duan-uniapp-bian-yi-hou-%2B-hou-duan-php.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Meekdai/meekdai.github.io/logo64.jpg">
+<title>【亲测】WealthFlow多语言交易所源码/加密货币+外汇+美股+期货+借贷+质押+场控输赢+模拟账号/前端uniapp编译后+后端php</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+<style>.dian{display:flex}.dian>a{margin:10px;color:#ff5722}.downurl>.active{color:#ef093a;font-size:15pt}.help>p{font-size:1.5rem}.cur{color:#ef093a;font-size:15pt}#user-content-ul_Address li>a{margin:10px;color:#ff5722}#user-content-ul_Address li{list-style:none;margin-left:-42px;display:flex}#user-content-ul_Address .address-wrap .on{list-style:none}ul>li{list-style:none}#user-content-sc_notice{color:#fff;background:#034cff url('/static/img/sc_notice.png') -1px -1px no-repeat;border:1px solid #034cff;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px;border-radius:10px}#user-content-sc_warn{color:#ad9948;background:#fff4b9 url('/static/img/sc_warn.png') -1px -1px no-repeat;border:1px solid #eac946;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_error{color:#fff;background:#00bd3f;overflow:hidden;margin:10px 0px;padding:12px 15px 0px 35px;border-radius:10px;height:78px;display:inline-table;}#user-content-sc_error p{line-height:1;}#user-content-sc_error a{color:#000000;}#user-content-sc_tips{color:#777;background:#eaeaea url('/static/img/sc_tips.png') -1px -1px no-repeat;border:1px solid #ccc;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_blue{color:#1ba1e2;background:rgba(27,161,226,0.26) url('/static/img/sc_blue.png') -1px -1px no-repeat;border:1px solid #1ba1e2;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_black{border-width:1px 4px 4px 1px;border-style:solid;border-color:#3e3e3e;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_xuk{border:2px dashed rgb(41,170,227);background-color:rgb(248,247,245);margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_lvb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #05B536;background:#FFF}#user-content-sc_redb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #ED0505;background:#FFF}#user-content-sc_organge{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #EC8006;background:#FFF}#user-content-sc_fankui{color:#fff;background:#00bd3f url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #00bd3f;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_shuoming{color:#fff;background:#ff4545 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #ff4545;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_jietu{color:#fff;background:#35b8e0 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #35b8e0;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}.article-content p{padding:15px;background:#f8f9fa;border-radius:5px}#user-content-timibbs12{display:flex;flex-wrap:wrap}#user-content-timibbs12 p{display:contents;width:33.33%}#user-content-timibbs15{color:#ffffff;background:#FF5722;border:1px solid #FF5722;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin:3% 43%}.post-content .aligncenter{border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto}#user-content-timibbs12 a{color:#03a9f4;flex:1 0 33.33%;padding:3px;display:flex;margin-bottom:5px;}#user-content-sc_error b{display:block;margin-top:5px;}#user-content-announcement{border:1px solid #ddd;padding:20px;margin:30px 0 10px;background-color:#f9f9f9;border-radius:15px;font-family:Arial,sans-serif;text-align: center;}#user-content-announcement h2{color:#007bff;margin:0 0 10px;}#user-content-announcement p{margin:0;font-size:1.1rem;color:#333;}#user-content-announcement a{color:#007bff;text-decoration:none;}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">【亲测】WealthFlow多语言交易所源码/加密货币+外汇+美股+期货+借贷+质押+场控输赢+模拟账号/前端uniapp编译后+后端php</h1>
+<div class="title-right">
+    <a href="https://wukongymw.github.io/wukongymw/" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/wukongymw/wukongymw/issues/492" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><div id="user-content-announcement"><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href="https://t.me/wukongym" rel="nofollow">点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href="https://t.me/wukongymw" rel="nofollow">点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+<div id="user-content-sc_error">本套程序已经过悟空源码技术人员测试，如需搭建请直接联系客服：<a href="http://t.me/wukongymw" rel="nofollow">@wukongymw</a>
+<b>解压密码：wukongymw.com</b></div>
+<div id="user-content-sc_shuoming">源码说明</div>
+WealthFlow多语言交易所源码/加密货币+外汇+美股+期货+借贷+质押+场控输赢+模拟账号/前端uniapp编译后+后端php
+<div id="user-content-sc_fankui">测试反馈</div>
+测试环境：Linux系统Ubuntu22、宝塔面板、Nginx、PHP7.2、MySQL5.7，运行目录public，伪静态选择thinkphp，建议开启SSL
+<p>语言：6种，看图</p>
+<p>这一套的功能非常多，很多功能都有，包括加密货币、外汇产品、美股产品、期货产品等，这些都可以设置期权交易属性，还有杠杆交易、借贷、质押这些功能，外汇和股票可以需要换接口</p>
+<p>控制的话没有测试，就连k线都不需要你配置服务器环境，只要服务器ip在火币允许的名单内，前端可以直接调用k线数据，对于新手比较友好</p>
+<p>控制分为用户场控（全赢、全输、涨赢跌随机、跌赢涨随机、涨赢跌输、跌赢涨输），杠杆交易也可以控输赢</p>
+<p>另外这一套可以设置任何币种为平台币，后台有设置平台币k线，我没找到在哪里，你们自己研究一下</p>
+<p>前端还有试玩账号登录，这个我觉得也有卖点，解决了用户体验时需要注册的繁琐过程</p>
+<p>很遗憾的是，这套前端是编译后的，没有纯源码，要不然卖上万都是随随便便的事，编译后的也有价值哦，自己拿去参考</p>
+<p>数据库修改：config/database.php 里面将 timibbs_jys120 改成你自己的，或者你自己设置账号密码都为 timibbs_jys120 即可</p>
+<p>前端修改：新建网站将 jys120-h5.timibbs.cc_20241209_015131.tar.gz 前端文件上传并解压，使用宝塔的全局搜索软件搜索 jys120.timibbs.cc 改为你自己的后端域名，同时需要做反向代理用于代理api</p>
+<p>前端：<a href="https://jys120-h5.timibbs.cc/" rel="nofollow">https://jys120-h5.timibbs.cc/</a><br>
+用模拟账号登录</p>
+<p>后台：<a href="https://jys120.timibbs.cc/timibbs" rel="nofollow">https://jys120.timibbs.cc/timibbs</a><br>
+账号：admin<br>
+密码：timibbs.net</p>
+<p>伪静态添加反向代理：</p>
+<pre class="notranslate"><code class="notranslate">location /api {
+	# 此处改为后端的域名 需要添加/
+	proxy_pass https://ceshi11.wkym.cc/; 
+	proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection "upgrade";
+	proxy_http_version 1.1;
+	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	proxy_set_header Host $host;
+  proxy_set_header X-Real-IP $remote_addr;
+}
+
+</code></pre>
+<p>添加上面反向代理的话就不要做前后端分离，直接放前端解压到public根目录，修改一下默认文档 index.html 为第一个就可以了。不会搭建的联系 TG：<a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/wukongymw/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/wukongymw">@wukongymw</a></p>
+<div id="user-content-sc_jietu">截图展示</div>
+<div id="user-content-timibbs15">H5端</div>
+<div id="user-content-timibbs12">
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/a0f0d13db8fa1ad.png" rel="nofollow"><img src="https://camo.githubusercontent.com/ca4dc3ab86ff120d7af16a88309ec3d6afacf5124fb50ce7042e2f962a9d8716/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f6130663064313364623866613161642e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/a0f0d13db8fa1ad.png" style="max-width: 100%;"></a><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/fde55856f8bcefd.png" rel="nofollow"><img src="https://camo.githubusercontent.com/4d1814b958b8003234f73769ac341d59223e17218e2e140f7aaa6b11b9d655a4/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f6664653535383536663862636566642e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/fde55856f8bcefd.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/e2ee83b8b5eaadd.png" rel="nofollow"><img src="https://camo.githubusercontent.com/26e2e822fa2cdb98e986b38990a3ebda5e95062564dd0ec2561e819e4f1e3c21/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f6532656538336238623565616164642e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/e2ee83b8b5eaadd.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/54690a288184fcb.png" rel="nofollow"><img src="https://camo.githubusercontent.com/f8c560c2ed8667cb9de7816a11263ab09b6a41105fa8406c957602aea9e3b672/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3534363930613238383138346663622e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/54690a288184fcb.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/8de4bec43f8abb9.png" rel="nofollow"><img src="https://camo.githubusercontent.com/06cf753cd4e72acf2d1bca7452da9b9709e13d9ced6b159fb9babcb49af56e97/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3864653462656334336638616262392e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/8de4bec43f8abb9.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/90d0f49e5e8a742.png" rel="nofollow"><img src="https://camo.githubusercontent.com/ddf58ea84972f2a9a3f1e9fd5eef7796d367d0ef9c3657b60e4502565d12785d/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3930643066343965356538613734322e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/90d0f49e5e8a742.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/25de1a2074b5a2d.png" rel="nofollow"><img src="https://camo.githubusercontent.com/05d64963e6435d40dd0614b97da322ba5146c0d9818dd4033698423679fcbdb7/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3235646531613230373462356132642e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/25de1a2074b5a2d.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/61045e7ff85e8d1.png" rel="nofollow"><img src="https://camo.githubusercontent.com/fa123fe9a6c38f8d2e9ad7a32ec967f788ace9c6f322cd9a936f969601dbc888/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3631303435653766663835653864312e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/61045e7ff85e8d1.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/73a1e813ff7bf7b.png" rel="nofollow"><img src="https://camo.githubusercontent.com/5ce6116cf1a51ac457a105d4dbb68273a4b0f1dff8f8695bbf3ab38ec22ad222/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3733613165383133666637626637622e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/73a1e813ff7bf7b.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/819848d99e44c41.png" rel="nofollow"><img src="https://camo.githubusercontent.com/9d13a03f619914db58b45d86608ec410c9027b4490ae0fcce63e6f2bc70480ee/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3831393834386439396534346334312e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/819848d99e44c41.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/7472030ca721497.png" rel="nofollow"><img src="https://camo.githubusercontent.com/03ab7c0497f07c6a01f843aef8a1f59b56498735f38842cd9d56575dd86945d3/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3734373230333063613732313439372e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/7472030ca721497.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/995ab26e35c5c93.png" rel="nofollow"><img src="https://camo.githubusercontent.com/9c99879e9d1bdc014727e28b388278afb83c967f6483c6a9c02e197ebfb32760/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3939356162323665333563356339332e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/995ab26e35c5c93.png" style="max-width: 100%;"></a></p>
+</div>
+<div id="user-content-timibbs15">后台</div>
+<div id="user-content-timibbs12">
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/aecc24a0ef0106e.png" rel="nofollow"><img src="https://camo.githubusercontent.com/6a04cc00da39efbc128d7c4b0102e4250fa40e9df4ef97f2e24c22837200377b/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f6165636332346130656630313036652e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/aecc24a0ef0106e.png" style="max-width: 100%;"></a><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/3acbd428201cd0a.png" rel="nofollow"><img src="https://camo.githubusercontent.com/cf9cd1441dfcc30f7a9f3622ecf96b9396e0d4c8d36b2e024c403e80f1da8ad4/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3361636264343238323031636430612e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/3acbd428201cd0a.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/404c8525ca0a110.png" rel="nofollow"><img src="https://camo.githubusercontent.com/3e521f445064e9e2e56df823e269ead4bee08901db4541cce70bca2434722382/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3430346338353235636130613131302e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/404c8525ca0a110.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/a45d36b95dff6b3.png" rel="nofollow"><img src="https://camo.githubusercontent.com/a3e2d336a6a5f3ad18796dc4e9fcd6dca31207749a0df7c4bac6bb04446bc7a4/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f6134356433366239356466663662332e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/a45d36b95dff6b3.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/c4aae4bbf8e2e1f.png" rel="nofollow"><img src="https://camo.githubusercontent.com/e6e8d7ff7546919d702bcfe91908fcffd77193d4e707f3e69c11827004f6052d/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f6334616165346262663865326531662e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/c4aae4bbf8e2e1f.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/02/0cf456c7917c47e.png" rel="nofollow"><img src="https://camo.githubusercontent.com/2eb1326caacee2b8abf80748bef8f0886c88cfb2fd9eac1c0a62d1dfb57e0c5c/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30322f3063663435366337393137633437652e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/02/0cf456c7917c47e.png" style="max-width: 100%;"></a></p>
+</div>
+</div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处-悟空源码网 wukongymw.com</div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wukongymw.github.io/wukongymw/">悟空源码网 wkym.cc</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("02/16/2021"!=""){
+    var startSite=new Date("02/16/2021");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</html>
