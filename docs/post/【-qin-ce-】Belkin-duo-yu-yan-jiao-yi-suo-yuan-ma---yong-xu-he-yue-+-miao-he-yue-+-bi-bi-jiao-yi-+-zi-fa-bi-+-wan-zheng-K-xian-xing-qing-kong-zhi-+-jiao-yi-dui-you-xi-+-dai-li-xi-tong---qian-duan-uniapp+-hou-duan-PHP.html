@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://pub-e48ea883b4bd4aab9489ad31860393df.r2.dev/favicon.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_error'>本套程序已经过悟空源码技术人员测试，如需搭建请直接联系客服：<a href='http://t.me/wukongymw'>@wukongymw</a>
+<b>解压密码：wukongymw.com</b></div>
+
+<div id='sc_shuoming'>源码说明</div>
+Belkin多语言交易所源码/永续合约+秒合约+币币交易+自发币+完整K线行情控制+交易对游戏+代理系统/前端uniapp+后端PHP
+
+<div id='sc_fankui'>测试反馈</div>
+后端测试环境：Linux系统CentOS7.6、宝塔面板、Nginx、PHP7.3、MySQL5.7，运行目录public，伪静态laravel5，建议开启SSL
+
+语言：16种，看图
+
+这是用16国GTB交易所二开的一套，测试K线行情数据都正常，前端H5uniapp纯源码+PC端vue纯源码+后端laravel框架
+
+测试发现的问题：
+1、后端有期权、申购、质押挖矿功能，但是前端没有，可能注释或者删掉了；
+2、交易对游戏不能正常结算；
+3、秒合约交易不能正常结算；
+4、币币交易（现货交易）不能正常结算；
+5、后台风控管理-行情风控有时候设置会有些问题；
+
+大概就是这几个问题，永续合约结算是正常的，前端页面倒是简洁（功能比较少）
+
+打包前端pc的时候可能会遇到一些依赖树的问题，百度搜教程可以解决
+
+测试的时候写了完整的搭建教程，也可以用以前的GTB搭建教程，没有多大难度
+
+问了几个同行，他们虽然有这套源码但是都没有测试过，并且他们还是卖钱的，<strong>所以我决定把编译后的版本免费给会员下载，如果需要前端源码可以找客服TG：@wukongymw 进行购买
+
+前端源码不贵，给点烟钱&#x1f4b0;就行</strong>
+
+数据库修改：.env 里面将 wukong_ceshi25 改成你自己的，或者你自己设置账号密码都为 wukong_ceshi25 即可
+
+前端h5：https://ceshi25.wkym.cc/h5
+前端pc：https://ceshi25.wkym.cc/pc
+测试账号：wukongymw@gmail.com
+密码：123456
+
+后台：https://ceshi25.wkym.cc/admin
+账号：wukongymw
+密码：wukongymw.com
+
+编译后前端域名修改：宝塔安装 文件搜索及批量修改 软件，把搜索目录切换到 根目录/public 下面，查找目标：ceshi25.wkym.cc，文件类型：*.js，然后搜索出来替换为你自己的域名就行
+
+搭建教程和计划任务脚本都放在压缩包里了
+
+<div id='sc_jietu'>截图展示</div>
+
+<div id='timibbs15'>前端H5</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/2525aef2892f026.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/2525aef2892f026.png' alt=''   class='alignnone size-full wp-image-203691' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/9d60724b1cd4de3.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/9d60724b1cd4de3.png' alt=''   class='alignnone size-full wp-image-203692' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/52f19304455fe45.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/52f19304455fe45.png' alt=''   class='alignnone size-full wp-image-203693' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3dc8433bd1f351d.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3dc8433bd1f351d.png' alt=''   class='alignnone size-full wp-image-203694' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/2052ba91d63b3ca.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/2052ba91d63b3ca.png' alt=''   class='alignnone size-full wp-image-203695' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/82986086b7f99bc.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/82986086b7f99bc.png' alt=''   class='alignnone size-full wp-image-203696' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3e64c20200877b1.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3e64c20200877b1.png' alt=''   class='alignnone size-full wp-image-203697' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/419597819c07eb6.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/419597819c07eb6.png' alt=''   class='alignnone size-full wp-image-203698' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/587409a58edd440.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/587409a58edd440.png' alt=''   class='alignnone size-full wp-image-203699' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/277bedd2bc1368e.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/277bedd2bc1368e.png' alt=''   class='alignnone size-full wp-image-203700' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/0684123560d96ab.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/0684123560d96ab.png' alt=''   class='alignnone size-full wp-image-203701' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/5ce6aa12734ea66.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/5ce6aa12734ea66.png' alt=''   class='alignnone size-full wp-image-203702' /></a>
+</div>
+<div id='timibbs15'>前端PC</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3042663402ba0a0.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3042663402ba0a0.png' alt=''   class='alignnone size-full wp-image-203707' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/fbdf6aabf973a57.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/fbdf6aabf973a57.png' alt=''   class='alignnone size-full wp-image-203708' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/fd66274af54d950.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/fd66274af54d950.png' alt=''   class='alignnone size-full wp-image-203706' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/408542efcd28b79.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/408542efcd28b79.png' alt=''   class='alignnone size-full wp-image-203703' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/75b9ca377ee769c.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/75b9ca377ee769c.png' alt=''   class='alignnone size-full wp-image-203704' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/92c690af70761a2.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/92c690af70761a2.png' alt=''   class='alignnone size-full wp-image-203705' /></a>
+</div>
+<div id='timibbs15'>后台</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/77d3718ee617fc6.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/77d3718ee617fc6.png' alt=''   class='alignnone size-full wp-image-203709' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/b5c7416dbbf16e3.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/b5c7416dbbf16e3.png' alt=''   class='alignnone size-full wp-image-203710' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/1db2ed52760e6cf.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/1db2ed52760e6cf.png' alt=''   class='alignnone size-full wp-image-203711' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/b2d6294b26320e1.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/b2d6294b26320e1.png' alt=''   class='alignnone size-full wp-image-203712' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/dae0cf5a28cde13.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/dae0cf5a28cde13.png' alt=''   class='alignnone size-full wp-image-203713' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/da8c5201033f1e1.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/da8c5201033f1e1.png' alt=''   class='alignnone size-full wp-image-203714' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/500f5e98a2f67e9.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/500f5e98a2f67e9.png' alt=''   class='alignnone size-full wp-image-203715' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/413cae2cc9364fe.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/413cae2cc9364fe.png' alt=''   class='alignnone size-full wp-image-203716' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/5d2a9ea7094b548.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/5d2a9ea7094b548.png' alt=''   class='alignnone size-full wp-image-203717' /></a>
+</div>
+
+
+<!-- ##{'timestamp':1746922193}## -->。">
+<meta property="og:title" content="【亲测】Belkin多语言交易所源码/永续合约+秒合约+币币交易+自发币+完整K线行情控制+交易对游戏+代理系统/前端uniapp+后端PHP">
+<meta property="og:description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_error'>本套程序已经过悟空源码技术人员测试，如需搭建请直接联系客服：<a href='http://t.me/wukongymw'>@wukongymw</a>
+<b>解压密码：wukongymw.com</b></div>
+
+<div id='sc_shuoming'>源码说明</div>
+Belkin多语言交易所源码/永续合约+秒合约+币币交易+自发币+完整K线行情控制+交易对游戏+代理系统/前端uniapp+后端PHP
+
+<div id='sc_fankui'>测试反馈</div>
+后端测试环境：Linux系统CentOS7.6、宝塔面板、Nginx、PHP7.3、MySQL5.7，运行目录public，伪静态laravel5，建议开启SSL
+
+语言：16种，看图
+
+这是用16国GTB交易所二开的一套，测试K线行情数据都正常，前端H5uniapp纯源码+PC端vue纯源码+后端laravel框架
+
+测试发现的问题：
+1、后端有期权、申购、质押挖矿功能，但是前端没有，可能注释或者删掉了；
+2、交易对游戏不能正常结算；
+3、秒合约交易不能正常结算；
+4、币币交易（现货交易）不能正常结算；
+5、后台风控管理-行情风控有时候设置会有些问题；
+
+大概就是这几个问题，永续合约结算是正常的，前端页面倒是简洁（功能比较少）
+
+打包前端pc的时候可能会遇到一些依赖树的问题，百度搜教程可以解决
+
+测试的时候写了完整的搭建教程，也可以用以前的GTB搭建教程，没有多大难度
+
+问了几个同行，他们虽然有这套源码但是都没有测试过，并且他们还是卖钱的，<strong>所以我决定把编译后的版本免费给会员下载，如果需要前端源码可以找客服TG：@wukongymw 进行购买
+
+前端源码不贵，给点烟钱&#x1f4b0;就行</strong>
+
+数据库修改：.env 里面将 wukong_ceshi25 改成你自己的，或者你自己设置账号密码都为 wukong_ceshi25 即可
+
+前端h5：https://ceshi25.wkym.cc/h5
+前端pc：https://ceshi25.wkym.cc/pc
+测试账号：wukongymw@gmail.com
+密码：123456
+
+后台：https://ceshi25.wkym.cc/admin
+账号：wukongymw
+密码：wukongymw.com
+
+编译后前端域名修改：宝塔安装 文件搜索及批量修改 软件，把搜索目录切换到 根目录/public 下面，查找目标：ceshi25.wkym.cc，文件类型：*.js，然后搜索出来替换为你自己的域名就行
+
+搭建教程和计划任务脚本都放在压缩包里了
+
+<div id='sc_jietu'>截图展示</div>
+
+<div id='timibbs15'>前端H5</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/2525aef2892f026.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/2525aef2892f026.png' alt=''   class='alignnone size-full wp-image-203691' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/9d60724b1cd4de3.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/9d60724b1cd4de3.png' alt=''   class='alignnone size-full wp-image-203692' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/52f19304455fe45.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/52f19304455fe45.png' alt=''   class='alignnone size-full wp-image-203693' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3dc8433bd1f351d.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3dc8433bd1f351d.png' alt=''   class='alignnone size-full wp-image-203694' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/2052ba91d63b3ca.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/2052ba91d63b3ca.png' alt=''   class='alignnone size-full wp-image-203695' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/82986086b7f99bc.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/82986086b7f99bc.png' alt=''   class='alignnone size-full wp-image-203696' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3e64c20200877b1.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3e64c20200877b1.png' alt=''   class='alignnone size-full wp-image-203697' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/419597819c07eb6.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/419597819c07eb6.png' alt=''   class='alignnone size-full wp-image-203698' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/587409a58edd440.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/587409a58edd440.png' alt=''   class='alignnone size-full wp-image-203699' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/277bedd2bc1368e.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/277bedd2bc1368e.png' alt=''   class='alignnone size-full wp-image-203700' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/0684123560d96ab.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/0684123560d96ab.png' alt=''   class='alignnone size-full wp-image-203701' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/5ce6aa12734ea66.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/5ce6aa12734ea66.png' alt=''   class='alignnone size-full wp-image-203702' /></a>
+</div>
+<div id='timibbs15'>前端PC</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3042663402ba0a0.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/3042663402ba0a0.png' alt=''   class='alignnone size-full wp-image-203707' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/fbdf6aabf973a57.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/fbdf6aabf973a57.png' alt=''   class='alignnone size-full wp-image-203708' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/fd66274af54d950.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/fd66274af54d950.png' alt=''   class='alignnone size-full wp-image-203706' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/408542efcd28b79.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/408542efcd28b79.png' alt=''   class='alignnone size-full wp-image-203703' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/75b9ca377ee769c.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/75b9ca377ee769c.png' alt=''   class='alignnone size-full wp-image-203704' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/92c690af70761a2.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/92c690af70761a2.png' alt=''   class='alignnone size-full wp-image-203705' /></a>
+</div>
+<div id='timibbs15'>后台</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/77d3718ee617fc6.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/77d3718ee617fc6.png' alt=''   class='alignnone size-full wp-image-203709' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/b5c7416dbbf16e3.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/b5c7416dbbf16e3.png' alt=''   class='alignnone size-full wp-image-203710' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/1db2ed52760e6cf.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/1db2ed52760e6cf.png' alt=''   class='alignnone size-full wp-image-203711' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/b2d6294b26320e1.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/b2d6294b26320e1.png' alt=''   class='alignnone size-full wp-image-203712' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/dae0cf5a28cde13.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/dae0cf5a28cde13.png' alt=''   class='alignnone size-full wp-image-203713' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/da8c5201033f1e1.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/da8c5201033f1e1.png' alt=''   class='alignnone size-full wp-image-203714' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/500f5e98a2f67e9.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/500f5e98a2f67e9.png' alt=''   class='alignnone size-full wp-image-203715' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/413cae2cc9364fe.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/413cae2cc9364fe.png' alt=''   class='alignnone size-full wp-image-203716' /></a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2025/05/5d2a9ea7094b548.png'><img src='https://cdn.wukongymw.com/wp-content/uploads/2025/05/5d2a9ea7094b548.png' alt=''   class='alignnone size-full wp-image-203717' /></a>
+</div>
+
+
+<!-- ##{'timestamp':1746922193}## -->。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wukongymw.github.io/wukongymw//post/%E3%80%90-qin-ce-%E3%80%91Belkin-duo-yu-yan-jiao-yi-suo-yuan-ma---yong-xu-he-yue-%2B-miao-he-yue-%2B-bi-bi-jiao-yi-%2B-zi-fa-bi-%2B-wan-zheng-K-xian-xing-qing-kong-zhi-%2B-jiao-yi-dui-you-xi-%2B-dai-li-xi-tong---qian-duan-uniapp%2B-hou-duan-PHP.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Meekdai/meekdai.github.io/logo64.jpg">
+<title>【亲测】Belkin多语言交易所源码/永续合约+秒合约+币币交易+自发币+完整K线行情控制+交易对游戏+代理系统/前端uniapp+后端PHP</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+<style>.dian{display:flex}.dian>a{margin:10px;color:#ff5722}.downurl>.active{color:#ef093a;font-size:15pt}.help>p{font-size:1.5rem}.cur{color:#ef093a;font-size:15pt}#user-content-ul_Address li>a{margin:10px;color:#ff5722}#user-content-ul_Address li{list-style:none;margin-left:-42px;display:flex}#user-content-ul_Address .address-wrap .on{list-style:none}ul>li{list-style:none}#user-content-sc_notice{color:#fff;background:#034cff url('/static/img/sc_notice.png') -1px -1px no-repeat;border:1px solid #034cff;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px;border-radius:10px}#user-content-sc_warn{color:#ad9948;background:#fff4b9 url('/static/img/sc_warn.png') -1px -1px no-repeat;border:1px solid #eac946;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_error{color:#fff;background:#00bd3f;overflow:hidden;margin:10px 0px;padding:12px 15px 0px 35px;border-radius:10px;height:78px;display:inline-table;}#user-content-sc_error p{line-height:1;}#user-content-sc_error a{color:#000000;}#user-content-sc_tips{color:#777;background:#eaeaea url('/static/img/sc_tips.png') -1px -1px no-repeat;border:1px solid #ccc;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_blue{color:#1ba1e2;background:rgba(27,161,226,0.26) url('/static/img/sc_blue.png') -1px -1px no-repeat;border:1px solid #1ba1e2;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_black{border-width:1px 4px 4px 1px;border-style:solid;border-color:#3e3e3e;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_xuk{border:2px dashed rgb(41,170,227);background-color:rgb(248,247,245);margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_lvb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #05B536;background:#FFF}#user-content-sc_redb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #ED0505;background:#FFF}#user-content-sc_organge{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #EC8006;background:#FFF}#user-content-sc_fankui{color:#fff;background:#00bd3f url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #00bd3f;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_shuoming{color:#fff;background:#ff4545 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #ff4545;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_jietu{color:#fff;background:#35b8e0 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #35b8e0;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}.article-content p{padding:15px;background:#f8f9fa;border-radius:5px}#user-content-timibbs12{display:flex;flex-wrap:wrap}#user-content-timibbs12 p{display:contents;width:33.33%}#user-content-timibbs15{color:#ffffff;background:#FF5722;border:1px solid #FF5722;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin:3% 43%}.post-content .aligncenter{border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto}#user-content-timibbs12 a{color:#03a9f4;flex:1 0 33.33%;padding:3px;display:flex;margin-bottom:5px;}#user-content-sc_error b{display:block;margin-top:5px;}#user-content-announcement{border:1px solid #ddd;padding:20px;margin:30px 0 10px;background-color:#f9f9f9;border-radius:15px;font-family:Arial,sans-serif;text-align: center;}#user-content-announcement h2{color:#007bff;margin:0 0 10px;}#user-content-announcement p{margin:0;font-size:1.1rem;color:#333;}#user-content-announcement a{color:#007bff;text-decoration:none;}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">【亲测】Belkin多语言交易所源码/永续合约+秒合约+币币交易+自发币+完整K线行情控制+交易对游戏+代理系统/前端uniapp+后端PHP</h1>
+<div class="title-right">
+    <a href="https://wukongymw.github.io/wukongymw/" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/wukongymw/wukongymw/issues/534" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><div id="user-content-announcement"><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href="https://t.me/wukongym" rel="nofollow">点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href="https://t.me/wukongymw" rel="nofollow">点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+<div id="user-content-sc_error">本套程序已经过悟空源码技术人员测试，如需搭建请直接联系客服：<a href="http://t.me/wukongymw" rel="nofollow">@wukongymw</a>
+<b>解压密码：wukongymw.com</b></div>
+<div id="user-content-sc_shuoming">源码说明</div>
+Belkin多语言交易所源码/永续合约+秒合约+币币交易+自发币+完整K线行情控制+交易对游戏+代理系统/前端uniapp+后端PHP
+<div id="user-content-sc_fankui">测试反馈</div>
+后端测试环境：Linux系统CentOS7.6、宝塔面板、Nginx、PHP7.3、MySQL5.7，运行目录public，伪静态laravel5，建议开启SSL
+<p>语言：16种，看图</p>
+<p>这是用16国GTB交易所二开的一套，测试K线行情数据都正常，前端H5uniapp纯源码+PC端vue纯源码+后端laravel框架</p>
+<p>测试发现的问题：<br>
+1、后端有期权、申购、质押挖矿功能，但是前端没有，可能注释或者删掉了；<br>
+2、交易对游戏不能正常结算；<br>
+3、秒合约交易不能正常结算；<br>
+4、币币交易（现货交易）不能正常结算；<br>
+5、后台风控管理-行情风控有时候设置会有些问题；</p>
+<p>大概就是这几个问题，永续合约结算是正常的，前端页面倒是简洁（功能比较少）</p>
+<p>打包前端pc的时候可能会遇到一些依赖树的问题，百度搜教程可以解决</p>
+<p>测试的时候写了完整的搭建教程，也可以用以前的GTB搭建教程，没有多大难度</p>
+<p>问了几个同行，他们虽然有这套源码但是都没有测试过，并且他们还是卖钱的，<strong>所以我决定把编译后的版本免费给会员下载，如果需要前端源码可以找客服TG：<a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/wukongymw/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/wukongymw">@wukongymw</a> 进行购买</strong></p><strong>
+</strong><p><strong>前端源码不贵，给点烟钱💰就行</strong></p>
+<p>数据库修改：.env 里面将 wukong_ceshi25 改成你自己的，或者你自己设置账号密码都为 wukong_ceshi25 即可</p>
+<p>前端h5：<a href="https://ceshi25.wkym.cc/h5" rel="nofollow">https://ceshi25.wkym.cc/h5</a><br>
+前端pc：<a href="https://ceshi25.wkym.cc/pc" rel="nofollow">https://ceshi25.wkym.cc/pc</a><br>
+测试账号：<a href="mailto:wukongymw@gmail.com">wukongymw@gmail.com</a><br>
+密码：123456</p>
+<p>后台：<a href="https://ceshi25.wkym.cc/admin" rel="nofollow">https://ceshi25.wkym.cc/admin</a><br>
+账号：wukongymw<br>
+密码：wukongymw.com</p>
+<p>编译后前端域名修改：宝塔安装 文件搜索及批量修改 软件，把搜索目录切换到 根目录/public 下面，查找目标：ceshi25.wkym.cc，文件类型：*.js，然后搜索出来替换为你自己的域名就行</p>
+<p>搭建教程和计划任务脚本都放在压缩包里了</p>
+<div id="user-content-sc_jietu">截图展示</div>
+<div id="user-content-timibbs15">前端H5</div><div id="user-content-timibbs12">
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/2525aef2892f026.png" rel="nofollow"><img src="https://camo.githubusercontent.com/cd22cc2e50b104285bace847075c408f0ece60ce340682b8f1cc17bd1ea37d0d/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3235323561656632383932663032362e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/2525aef2892f026.png" style="max-width: 100%;"></a>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/9d60724b1cd4de3.png" rel="nofollow"><img src="https://camo.githubusercontent.com/6ea8fee25428101cabd0f087c701c60320c74b8e7cce8e9bf5f4d1a5e6ba1426/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3964363037323462316364346465332e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/9d60724b1cd4de3.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/52f19304455fe45.png" rel="nofollow"><img src="https://camo.githubusercontent.com/a878c6c57bb89612a642e052a5b698a487d9512fcb12134923e61fd9aac61648/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3532663139333034343535666534352e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/52f19304455fe45.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/3dc8433bd1f351d.png" rel="nofollow"><img src="https://camo.githubusercontent.com/1ca4ca07ae57c1e16939acb6c9e6c622474cfd3f9cdf7ebe60cc365ad0d3d6c7/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3364633834333362643166333531642e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/3dc8433bd1f351d.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/2052ba91d63b3ca.png" rel="nofollow"><img src="https://camo.githubusercontent.com/19970f6979eae43be8a70913148087028dc00208ac19f67ac9a6291a1fe50411/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3230353262613931643633623363612e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/2052ba91d63b3ca.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/82986086b7f99bc.png" rel="nofollow"><img src="https://camo.githubusercontent.com/7bd0d61ee0b2402470106681b2256867faf042a8a075610a28935a3cffc0d2e5/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3832393836303836623766393962632e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/82986086b7f99bc.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/3e64c20200877b1.png" rel="nofollow"><img src="https://camo.githubusercontent.com/2e6a461a1c278e902b91094e8bd996c896e8505371df649e9d65f9d902af8288/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3365363463323032303038373762312e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/3e64c20200877b1.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/419597819c07eb6.png" rel="nofollow"><img src="https://camo.githubusercontent.com/4693016e33a97f54d7f7bb4000f28122c3027b350e718782002e1e2409faff07/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3431393539373831396330376562362e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/419597819c07eb6.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/587409a58edd440.png" rel="nofollow"><img src="https://camo.githubusercontent.com/15531cd6e74bf279d795ae20217fa9f0a15de0964403224e86bc0dcbffe94c27/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3538373430396135386564643434302e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/587409a58edd440.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/277bedd2bc1368e.png" rel="nofollow"><img src="https://camo.githubusercontent.com/296530d66e59655f1be9887cd02d6314878192f86c94f23774ca960ed44fd73e/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3237376265646432626331333638652e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/277bedd2bc1368e.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/0684123560d96ab.png" rel="nofollow"><img src="https://camo.githubusercontent.com/e2c4980d5ca3bbf0f28e0bc474dd90c2cd3de0a9badb2b0e9fab424d52474aab/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3036383431323335363064393661622e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/0684123560d96ab.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/5ce6aa12734ea66.png" rel="nofollow"><img src="https://camo.githubusercontent.com/41515884de775efffd3108908ebfad7a847da764a8a6a9e502c4795c02f0d8b6/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3563653661613132373334656136362e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/5ce6aa12734ea66.png" style="max-width: 100%;"></a></p>
+</div>
+<div id="user-content-timibbs15">前端PC</div><div id="user-content-timibbs12">
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/3042663402ba0a0.png" rel="nofollow"><img src="https://camo.githubusercontent.com/a4b8aeb97d41bb5e5cfc732136b21b286a83faa28336201fb7504c9ce2e4c629/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3330343236363334303262613061302e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/3042663402ba0a0.png" style="max-width: 100%;"></a>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/fbdf6aabf973a57.png" rel="nofollow"><img src="https://camo.githubusercontent.com/c6c42a4e0547d03c4b6fd5a265b70d8ad3be3d291a3a73eee6705df42f5cb3ba/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f6662646636616162663937336135372e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/fbdf6aabf973a57.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/fd66274af54d950.png" rel="nofollow"><img src="https://camo.githubusercontent.com/bc623b784406a48defd0ed16c3fad963ab1fce59f2b5cd3195fa5f7258d3c370/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f6664363632373461663534643935302e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/fd66274af54d950.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/408542efcd28b79.png" rel="nofollow"><img src="https://camo.githubusercontent.com/05667b69810142d2747d6e2407b4923e760a3605438b333f7aa533f4503f6120/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3430383534326566636432386237392e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/408542efcd28b79.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/75b9ca377ee769c.png" rel="nofollow"><img src="https://camo.githubusercontent.com/09799ca03a68b33698aa206dbd6aa6e6a1c91f8429716457b5f873c007401c7d/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3735623963613337376565373639632e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/75b9ca377ee769c.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/92c690af70761a2.png" rel="nofollow"><img src="https://camo.githubusercontent.com/4624a86a421bac77690f563726c8945b076174a7122ed147bcf741d96363ed8a/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3932633639306166373037363161322e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/92c690af70761a2.png" style="max-width: 100%;"></a></p>
+</div>
+<div id="user-content-timibbs15">后台</div><div id="user-content-timibbs12">
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/77d3718ee617fc6.png" rel="nofollow"><img src="https://camo.githubusercontent.com/626c9cf040d2faae30fd4be7843bd94c4eb1aff8dbd573a432209c5f8a5df5fc/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3737643337313865653631376663362e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/77d3718ee617fc6.png" style="max-width: 100%;"></a>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/b5c7416dbbf16e3.png" rel="nofollow"><img src="https://camo.githubusercontent.com/965f4449b8d5b35bc6e4e978bb955d0270020985b7d9ec3cadcfd8bef6292f23/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f6235633734313664626266313665332e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/b5c7416dbbf16e3.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/1db2ed52760e6cf.png" rel="nofollow"><img src="https://camo.githubusercontent.com/76b05184fa11473e32407f35056d0e28e92ff1411a66ec0171f847367a77a330/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3164623265643532373630653663662e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/1db2ed52760e6cf.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/b2d6294b26320e1.png" rel="nofollow"><img src="https://camo.githubusercontent.com/7c68a867ddb98c0c4d8f584c1a6c46a13ce5bf322b5d74e4f6ee41ac2cc2d848/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f6232643632393462323633323065312e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/b2d6294b26320e1.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/dae0cf5a28cde13.png" rel="nofollow"><img src="https://camo.githubusercontent.com/2d6d3daed31409d721185480a9b6513c9bd2fb04dde83ad14b12e74be4a86550/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f6461653063663561323863646531332e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/dae0cf5a28cde13.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/da8c5201033f1e1.png" rel="nofollow"><img src="https://camo.githubusercontent.com/63cef1a0314ab448533cda8fd16257837dd4471a603361faab1bf466250402a6/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f6461386335323031303333663165312e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/da8c5201033f1e1.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/500f5e98a2f67e9.png" rel="nofollow"><img src="https://camo.githubusercontent.com/9b49bd7329c1a642f5d1bd23a3b055f87141a8a7772cecfba87a361802ac3772/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3530306635653938613266363765392e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/500f5e98a2f67e9.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/413cae2cc9364fe.png" rel="nofollow"><img src="https://camo.githubusercontent.com/9ae19ec6db11a2fe87a7c13d08ad6fbfa91a23b3b007c931e582f8a7f244d54f/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3431336361653263633933363466652e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/413cae2cc9364fe.png" style="max-width: 100%;"></a></p>
+<p><a href="https://cdn.wukongymw.com/wp-content/uploads/2025/05/5d2a9ea7094b548.png" rel="nofollow"><img src="https://camo.githubusercontent.com/0762d1f33fb4bb6691dc79a97e92d0749e8c8dbc5694c2d492ea5214a049d465/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032352f30352f3564326139656137303934623534382e706e67" alt="" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2025/05/5d2a9ea7094b548.png" style="max-width: 100%;"></a></p>
+</div>
+</div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处-悟空源码网 wukongymw.com</div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wukongymw.github.io/wukongymw/">悟空源码网 wkym.cc</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("02/16/2021"!=""){
+    var startSite=new Date("02/16/2021");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</html>
