@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://pub-e48ea883b4bd4aab9489ad31860393df.r2.dev/favicon.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_shuoming'>源码说明</div>
+
+没有测试过，也是很久之前拿到的，据说是全开源，有4个G
+
+运营服务器打包，亲测可搭建运营。">
+<meta property="og:title" content="【未测试】全开源KGames紫色UI电玩城源码/视频搭建教程+宝塔安装教程+点控和库存控制">
+<meta property="og:description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_shuoming'>源码说明</div>
+
+没有测试过，也是很久之前拿到的，据说是全开源，有4个G
+
+运营服务器打包，亲测可搭建运营。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wukongymw.github.io/wukongymw//post/%E3%80%90-wei-ce-shi-%E3%80%91-quan-kai-yuan-KGames-zi-se-UI-dian-wan-cheng-yuan-ma---shi-pin-da-jian-jiao-cheng-%2B-bao-ta-an-zhuang-jiao-cheng-%2B-dian-kong-he-ku-cun-kong-zhi.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Meekdai/meekdai.github.io/logo64.jpg">
+<title>【未测试】全开源KGames紫色UI电玩城源码/视频搭建教程+宝塔安装教程+点控和库存控制</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+<style>.dian{display:flex}.dian>a{margin:10px;color:#ff5722}.downurl>.active{color:#ef093a;font-size:15pt}.help>p{font-size:1.5rem}.cur{color:#ef093a;font-size:15pt}#user-content-ul_Address li>a{margin:10px;color:#ff5722}#user-content-ul_Address li{list-style:none;margin-left:-42px;display:flex}#user-content-ul_Address .address-wrap .on{list-style:none}ul>li{list-style:none}#user-content-sc_notice{color:#fff;background:#034cff url('/static/img/sc_notice.png') -1px -1px no-repeat;border:1px solid #034cff;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px;border-radius:10px}#user-content-sc_warn{color:#ad9948;background:#fff4b9 url('/static/img/sc_warn.png') -1px -1px no-repeat;border:1px solid #eac946;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_error{color:#fff;background:#00bd3f;overflow:hidden;margin:10px 0px;padding:12px 15px 0px 35px;border-radius:10px;height:78px;display:inline-table;}#user-content-sc_error p{line-height:1;}#user-content-sc_error a{color:#000000;}#user-content-sc_tips{color:#777;background:#eaeaea url('/static/img/sc_tips.png') -1px -1px no-repeat;border:1px solid #ccc;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_blue{color:#1ba1e2;background:rgba(27,161,226,0.26) url('/static/img/sc_blue.png') -1px -1px no-repeat;border:1px solid #1ba1e2;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_black{border-width:1px 4px 4px 1px;border-style:solid;border-color:#3e3e3e;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_xuk{border:2px dashed rgb(41,170,227);background-color:rgb(248,247,245);margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_lvb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #05B536;background:#FFF}#user-content-sc_redb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #ED0505;background:#FFF}#user-content-sc_organge{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #EC8006;background:#FFF}#user-content-sc_fankui{color:#fff;background:#00bd3f url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #00bd3f;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_shuoming{color:#fff;background:#ff4545 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #ff4545;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_jietu{color:#fff;background:#35b8e0 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #35b8e0;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}.article-content p{padding:15px;background:#f8f9fa;border-radius:5px}#user-content-timibbs12{display:flex;flex-wrap:wrap}#user-content-timibbs12 p{display:contents;width:33.33%}#user-content-timibbs15{color:#ffffff;background:#FF5722;border:1px solid #FF5722;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin:3% 43%}.post-content .aligncenter{border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto}#user-content-timibbs12 a{color:#03a9f4;flex:1 0 33.33%;padding:3px;display:flex;margin-bottom:5px;}#user-content-sc_error b{display:block;margin-top:5px;}#user-content-announcement{border:1px solid #ddd;padding:20px;margin:30px 0 10px;background-color:#f9f9f9;border-radius:15px;font-family:Arial,sans-serif;text-align: center;}#user-content-announcement h2{color:#007bff;margin:0 0 10px;}#user-content-announcement p{margin:0;font-size:1.1rem;color:#333;}#user-content-announcement a{color:#007bff;text-decoration:none;}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">【未测试】全开源KGames紫色UI电玩城源码/视频搭建教程+宝塔安装教程+点控和库存控制</h1>
+<div class="title-right">
+    <a href="https://wukongymw.github.io/wukongymw/" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/wukongymw/wukongymw/issues/627" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><div id="user-content-announcement"><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href="https://t.me/wukongym" rel="nofollow">点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href="https://t.me/wukongymw" rel="nofollow">点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+<div id="user-content-sc_shuoming">源码说明</div>
+<p>没有测试过，也是很久之前拿到的，据说是全开源，有4个G</p>
+<p>运营服务器打包，亲测可搭建运营。H5+安卓+苹果三端齐全，安卓端和苹果端都是原生端，非H5网页封装双端，有带前端CocosCreator源码，方便二开和接支付。 这套个感觉比较上一个版本好看，框架是一样。但是，协议啥的还是做很多修改，总共游戏69个带控。 所有游戏都是本地游戏非接口。</p>
+<p>拉霸游戏：麻将胡了，麻将胡了2，十倍金牛，金玉满堂，冰火双娇，比基尼天堂，亡灵大盗，虎虎生威，赏金女王，寻宝黄金城，赏金大对决，招财猫，斗鸡，夜醉佳人，赏金船长，幸运球，爱尔兰精灵，宝石派对，伽罗宝石，伽罗宝石2，功夫虎，黄金小丑，招财猫，火热辣椒，黄金之书，JILI财神，發發發，黄金矿工，世界杯，美杜莎，雷神X，超级王牌，多福多财，水浒传，九线拉王，寻宝乐园，铃铛游戏，血色之夜，烈火小恶魔，丛林战士，海鸥传说。 百人游戏：飞禽走兽，百人牛牛，红包扫雷，森林舞会，龙虎斗，奔驰宝马，欢乐30秒，欢乐至尊，摇一摇，红黑大战。 棋牌游戏：抢庄三公，抢庄牛牛，二人牛牛，欢乐五张，通比牛牛，德州扑克，赢三张，四人牛牛，十点半，二十一点。 捕鱼游戏：大闹天宫2，寻龙夺宝，李逵劈鱼，金蟾捕鱼，大闹天宫。</p>
+<div id="user-content-timibbs12">
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/c5a5208a58d80b0abebdad792803bb2a.png" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/cc7c213ee43edd66974ed77102db8806b6a3169d28a43c9ea4b4d444684a843a/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f63356135323038613538643830623061626562646164373932383033626232612e706e67" alt="【未测试】全开源KGames紫色UI电玩城源码/KG仿PG包网UI/视频搭建教程+宝塔安装教程+点控和库存控制" width="578" height="994" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/c5a5208a58d80b0abebdad792803bb2a.png" style="max-width: 100%; height: auto; max-height: 994px;; aspect-ratio: 578 / 994; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/b09ad9b119dc31db60932d386a96cfa7.png" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/f9c85e10d770bae8bf456f5395edef34ab3b27031e0f27426d3af47f85589416/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f62303961643962313139646333316462363039333264333836613936636661372e706e67" alt="【未测试】全开源KGames紫色UI电玩城源码/KG仿PG包网UI/视频搭建教程+宝塔安装教程+点控和库存控制" width="578" height="994" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/b09ad9b119dc31db60932d386a96cfa7.png" style="max-width: 100%; height: auto; max-height: 994px;; aspect-ratio: 578 / 994; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/46c185cc60cb58cc7d35abb37a7c8a41.png" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/a4bb07171b6ea73c8dfa46ad6670fd62d00f062b937e8a0d6ad4d562e5683916/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f34366331383563633630636235386363376433356162623337613763386134312e706e67" alt="【未测试】全开源KGames紫色UI电玩城源码/KG仿PG包网UI/视频搭建教程+宝塔安装教程+点控和库存控制" width="578" height="985" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/46c185cc60cb58cc7d35abb37a7c8a41.png" style="max-width: 100%; height: auto; max-height: 985px;; aspect-ratio: 578 / 985; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/41f9e3d45e15b7cf4d94032d26fd3b88.png" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/d37db0f815f4f3eeb11c21f1ad0358872a76237003772cccc05ecf1fccfdf07b/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f34316639653364343565313562376366346439343033326432366664336238382e706e67" alt="【未测试】全开源KGames紫色UI电玩城源码/KG仿PG包网UI/视频搭建教程+宝塔安装教程+点控和库存控制" width="578" height="985" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/41f9e3d45e15b7cf4d94032d26fd3b88.png" style="max-width: 100%; height: auto; max-height: 985px;; aspect-ratio: 578 / 985; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/6251615c3b8d670c1f3855ee23911e43.png" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/1b51a7d3e3254d66c3a43f4a932f3491df1df4cefa5904b6d70dbde95953eb04/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f36323531363135633362386436373063316633383535656532333931316534332e706e67" alt="【未测试】全开源KGames紫色UI电玩城源码/KG仿PG包网UI/视频搭建教程+宝塔安装教程+点控和库存控制" width="578" height="985" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/6251615c3b8d670c1f3855ee23911e43.png" style="max-width: 100%; height: auto; max-height: 985px;; aspect-ratio: 578 / 985; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/5e594645417c212439a3abfe5da9aad9.png" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/29d198dbf72c99a0dac2130a739488c2882fd6c4ba65ed9e43aaca6d60502222/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f35653539343634353431376332313234333961336162666535646139616164392e706e67" alt="【未测试】全开源KGames紫色UI电玩城源码/KG仿PG包网UI/视频搭建教程+宝塔安装教程+点控和库存控制" width="578" height="985" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/5e594645417c212439a3abfe5da9aad9.png" style="max-width: 100%; height: auto; max-height: 985px;; aspect-ratio: 578 / 985; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/91252a57b0ca7ac24990088d2ee7e57a.png" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/2adba772f2102b4b00f2e2eaa7303855dd0726a7db92aacdd816df08da4a14e3/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f39313235326135376230636137616332343939303038386432656537653537612e706e67" alt="【未测试】全开源KGames紫色UI电玩城源码/KG仿PG包网UI/视频搭建教程+宝塔安装教程+点控和库存控制" width="1919" height="911" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/91252a57b0ca7ac24990088d2ee7e57a.png" style="max-width: 100%; height: auto; max-height: 911px;; aspect-ratio: 1919 / 911; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/d6977a21c1c29599824d40d4bda4deaf.png" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/4f3a62e57589d394cd635ce5519d701f13c2930f0638caffceb5a8aececc8eb9/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f64363937376132316331633239353939383234643430643462646134646561662e706e67" alt="【未测试】全开源KGames紫色UI电玩城源码/KG仿PG包网UI/视频搭建教程+宝塔安装教程+点控和库存控制" width="1826" height="920" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/d6977a21c1c29599824d40d4bda4deaf.png" style="max-width: 100%; height: auto; max-height: 920px;; aspect-ratio: 1826 / 920; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/8755c36e5f0493aaa1f12813dc327b0f.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/07ac18f762698707e9899a718086731551b78726575db196aac2ee8b814aacbe/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f38373535633336653566303439336161613166313238313364633332376230662e6a7067" alt="【未测试】全开源KGames紫色UI电玩城源码/KG仿PG包网UI/视频搭建教程+宝塔安装教程+点控和库存控制" width="2000" height="1317" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/8755c36e5f0493aaa1f12813dc327b0f.jpg" style="max-width: 100%; height: auto; max-height: 1317px;; aspect-ratio: 2000 / 1317; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+</div>
+</div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处-悟空源码网 wukongymw.com</div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wukongymw.github.io/wukongymw/">悟空源码网 wkym.cc</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("02/16/2021"!=""){
+    var startSite=new Date("02/16/2021");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</html>
