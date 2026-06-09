@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://pub-e48ea883b4bd4aab9489ad31860393df.r2.dev/favicon.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_fankui'>测试反馈</div>
+
+这是一套秒合约的交易所(微盘)，前后端都是开源的，后端代码里面有委买的逻辑，但是前端没有，估计前端的委买功能被删掉了，需要委买功能的话可以自己补上前端逻辑
+
+一共有31个产品，接口全都是 uk.yhcc.uk 自己聚合的数据，建议拿去改成稳定的接口
+虚拟货币：
+BTC/USDT、ETH/USDT、LINK/USDT、ADA/USDT、ETC/USDT、FIL/USDT、DOT/USDT、TRX/USDT、BCH/USDT、LTC/USDT、DCR/USDT、IOTA/USDT
+外汇：
+EURUSD、GBPUSD、USDJPY、AUDUSD、USDCAD、USDCHF、GBPJPY、EURJPY、EURGBP、NZDUSD
+贵金属：
+XAUUSD、XAGUSD、铜、镍、钯、铂金、铅、锌、铝
+
+后台订单可以控制盈亏，有全员盈利时间设置，最主要的是还做了Azure动态防封，这个功能解决的是APP内后端api被封禁的话可以动态切换后端域名，也就是反封锁功能，当然这个功能是针对前端做成了APP的，如果你用H5的话也许用不了这个模式，H5就得处理前端问题了
+
+贷款、余额宝投资理财功能也有，前端看样子整体是重构过的，K线图也挺好看，需要的可以拿去研究
+
+前端： https://ceshi127.wkym.cc/h5
+账号： wukongymw
+密码： 123456
+
+后台： https://ceshi127.wkym.cc/wukongymw.php
+账号： admin
+密码： wukongymw.com
+
+<div id='timibbs15'>前端</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ba061ebb0cb70ebe2b0a2be631671483.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ba061ebb0cb70ebe2b0a2be631671483.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/dbce0d94841e3f53e067ef2c42306bf0.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/dbce0d94841e3f53e067ef2c42306bf0.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9c02178790faf0e388d84dd64be4bb7f.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9c02178790faf0e388d84dd64be4bb7f.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ebbc971002c37f8b6a6097d2b427f360.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ebbc971002c37f8b6a6097d2b427f360.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ab542962dc4674020931f89b94f3fbb8.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ab542962dc4674020931f89b94f3fbb8.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9dab9ebbe1766f479f2242ccd9d1ee3b.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9dab9ebbe1766f479f2242ccd9d1ee3b.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e616e13b99ef8d3703c176793bbb8fe8.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e616e13b99ef8d3703c176793bbb8fe8.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ca21a18e8bf0e71a6d9c3e126cafb86c.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ca21a18e8bf0e71a6d9c3e126cafb86c.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/65656f3ebcfdd9203392bb53ea602ffc.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/65656f3ebcfdd9203392bb53ea602ffc.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d3d837729e24f37d00dd131bfa613f31.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d3d837729e24f37d00dd131bfa613f31.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9a443c62da1628724af7d3e89df7dfdd.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9a443c62da1628724af7d3e89df7dfdd.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/19dd24bad367b34ab371dd6dff2fbe54.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/19dd24bad367b34ab371dd6dff2fbe54.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/49bcbe85c9b6223522866377733b985e.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/49bcbe85c9b6223522866377733b985e.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d84f1922a84c52630931698ebf86aa6d.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d84f1922a84c52630931698ebf86aa6d.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/c6ee2f66637a9d0fa1f49076aa54d2d7.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/c6ee2f66637a9d0fa1f49076aa54d2d7.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+</div>
+<div id='timibbs15'>后台</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/101e9af44f636f047467fb07b548018c.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/101e9af44f636f047467fb07b548018c.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc2520b39db6cd42db34d5819ad7e033.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc2520b39db6cd42db34d5819ad7e033.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/a42aafe95929a75e76df30c399e9a1b2.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/a42aafe95929a75e76df30c399e9a1b2.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/c46f48c4d7584b95d99b22da5a8be307.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/c46f48c4d7584b95d99b22da5a8be307.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f1371554828fc3a5d17b16ab5078126d.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f1371554828fc3a5d17b16ab5078126d.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/66622e3e4d56d7240ad43fed3f81d1b1.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/66622e3e4d56d7240ad43fed3f81d1b1.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+</div>
+
+
+<!-- ##{'timestamp':1780953520}## -->。">
+<meta property="og:title" content="【售】WK-HKE多语言秒合约交易所源码/虚拟货币+贵金属+外汇+盈亏控制+贷款+余额宝理财+Azure动态防封">
+<meta property="og:description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_fankui'>测试反馈</div>
+
+这是一套秒合约的交易所(微盘)，前后端都是开源的，后端代码里面有委买的逻辑，但是前端没有，估计前端的委买功能被删掉了，需要委买功能的话可以自己补上前端逻辑
+
+一共有31个产品，接口全都是 uk.yhcc.uk 自己聚合的数据，建议拿去改成稳定的接口
+虚拟货币：
+BTC/USDT、ETH/USDT、LINK/USDT、ADA/USDT、ETC/USDT、FIL/USDT、DOT/USDT、TRX/USDT、BCH/USDT、LTC/USDT、DCR/USDT、IOTA/USDT
+外汇：
+EURUSD、GBPUSD、USDJPY、AUDUSD、USDCAD、USDCHF、GBPJPY、EURJPY、EURGBP、NZDUSD
+贵金属：
+XAUUSD、XAGUSD、铜、镍、钯、铂金、铅、锌、铝
+
+后台订单可以控制盈亏，有全员盈利时间设置，最主要的是还做了Azure动态防封，这个功能解决的是APP内后端api被封禁的话可以动态切换后端域名，也就是反封锁功能，当然这个功能是针对前端做成了APP的，如果你用H5的话也许用不了这个模式，H5就得处理前端问题了
+
+贷款、余额宝投资理财功能也有，前端看样子整体是重构过的，K线图也挺好看，需要的可以拿去研究
+
+前端： https://ceshi127.wkym.cc/h5
+账号： wukongymw
+密码： 123456
+
+后台： https://ceshi127.wkym.cc/wukongymw.php
+账号： admin
+密码： wukongymw.com
+
+<div id='timibbs15'>前端</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ba061ebb0cb70ebe2b0a2be631671483.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ba061ebb0cb70ebe2b0a2be631671483.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/dbce0d94841e3f53e067ef2c42306bf0.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/dbce0d94841e3f53e067ef2c42306bf0.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9c02178790faf0e388d84dd64be4bb7f.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9c02178790faf0e388d84dd64be4bb7f.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ebbc971002c37f8b6a6097d2b427f360.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ebbc971002c37f8b6a6097d2b427f360.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ab542962dc4674020931f89b94f3fbb8.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ab542962dc4674020931f89b94f3fbb8.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9dab9ebbe1766f479f2242ccd9d1ee3b.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9dab9ebbe1766f479f2242ccd9d1ee3b.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e616e13b99ef8d3703c176793bbb8fe8.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e616e13b99ef8d3703c176793bbb8fe8.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ca21a18e8bf0e71a6d9c3e126cafb86c.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ca21a18e8bf0e71a6d9c3e126cafb86c.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/65656f3ebcfdd9203392bb53ea602ffc.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/65656f3ebcfdd9203392bb53ea602ffc.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d3d837729e24f37d00dd131bfa613f31.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d3d837729e24f37d00dd131bfa613f31.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9a443c62da1628724af7d3e89df7dfdd.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/9a443c62da1628724af7d3e89df7dfdd.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/19dd24bad367b34ab371dd6dff2fbe54.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/19dd24bad367b34ab371dd6dff2fbe54.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/49bcbe85c9b6223522866377733b985e.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/49bcbe85c9b6223522866377733b985e.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d84f1922a84c52630931698ebf86aa6d.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d84f1922a84c52630931698ebf86aa6d.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/c6ee2f66637a9d0fa1f49076aa54d2d7.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/c6ee2f66637a9d0fa1f49076aa54d2d7.jpg' alt='交易所 微盘' width='491' height='1062' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+</div>
+<div id='timibbs15'>后台</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/101e9af44f636f047467fb07b548018c.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/101e9af44f636f047467fb07b548018c.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc2520b39db6cd42db34d5819ad7e033.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc2520b39db6cd42db34d5819ad7e033.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/a42aafe95929a75e76df30c399e9a1b2.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/a42aafe95929a75e76df30c399e9a1b2.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/c46f48c4d7584b95d99b22da5a8be307.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/c46f48c4d7584b95d99b22da5a8be307.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f1371554828fc3a5d17b16ab5078126d.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f1371554828fc3a5d17b16ab5078126d.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/66622e3e4d56d7240ad43fed3f81d1b1.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/66622e3e4d56d7240ad43fed3f81d1b1.jpg' alt='交易所 微盘' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+</div>
+
+
+<!-- ##{'timestamp':1780953520}## -->。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wukongymw.github.io/wukongymw//post/%E3%80%90-shou-%E3%80%91WK-HKE-duo-yu-yan-miao-he-yue-jiao-yi-suo-yuan-ma---xu-ni-huo-bi-%2B-gui-jin-shu-%2B-wai-hui-%2B-ying-kui-kong-zhi-%2B-dai-kuan-%2B-yu-e-bao-li-cai-%2BAzure-dong-tai-fang-feng.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Meekdai/meekdai.github.io/logo64.jpg">
+<title>【售】WK-HKE多语言秒合约交易所源码/虚拟货币+贵金属+外汇+盈亏控制+贷款+余额宝理财+Azure动态防封</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+<style>.dian{display:flex}.dian>a{margin:10px;color:#ff5722}.downurl>.active{color:#ef093a;font-size:15pt}.help>p{font-size:1.5rem}.cur{color:#ef093a;font-size:15pt}#user-content-ul_Address li>a{margin:10px;color:#ff5722}#user-content-ul_Address li{list-style:none;margin-left:-42px;display:flex}#user-content-ul_Address .address-wrap .on{list-style:none}ul>li{list-style:none}#user-content-sc_notice{color:#fff;background:#034cff url('/static/img/sc_notice.png') -1px -1px no-repeat;border:1px solid #034cff;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px;border-radius:10px}#user-content-sc_warn{color:#ad9948;background:#fff4b9 url('/static/img/sc_warn.png') -1px -1px no-repeat;border:1px solid #eac946;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_error{color:#fff;background:#00bd3f;overflow:hidden;margin:10px 0px;padding:12px 15px 0px 35px;border-radius:10px;height:78px;display:inline-table;}#user-content-sc_error p{line-height:1;}#user-content-sc_error a{color:#000000;}#user-content-sc_tips{color:#777;background:#eaeaea url('/static/img/sc_tips.png') -1px -1px no-repeat;border:1px solid #ccc;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_blue{color:#1ba1e2;background:rgba(27,161,226,0.26) url('/static/img/sc_blue.png') -1px -1px no-repeat;border:1px solid #1ba1e2;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_black{border-width:1px 4px 4px 1px;border-style:solid;border-color:#3e3e3e;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_xuk{border:2px dashed rgb(41,170,227);background-color:rgb(248,247,245);margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_lvb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #05B536;background:#FFF}#user-content-sc_redb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #ED0505;background:#FFF}#user-content-sc_organge{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #EC8006;background:#FFF}#user-content-sc_fankui{color:#fff;background:#00bd3f url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #00bd3f;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_shuoming{color:#fff;background:#ff4545 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #ff4545;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_jietu{color:#fff;background:#35b8e0 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #35b8e0;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}.article-content p{padding:15px;background:#f8f9fa;border-radius:5px}#user-content-timibbs12{display:flex;flex-wrap:wrap}#user-content-timibbs12 p{display:contents;width:33.33%}#user-content-timibbs15{color:#ffffff;background:#FF5722;border:1px solid #FF5722;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin:3% 43%}.post-content .aligncenter{border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto}#user-content-timibbs12 a{color:#03a9f4;flex:1 0 33.33%;padding:3px;display:flex;margin-bottom:5px;}#user-content-sc_error b{display:block;margin-top:5px;}#user-content-announcement{border:1px solid #ddd;padding:20px;margin:30px 0 10px;background-color:#f9f9f9;border-radius:15px;font-family:Arial,sans-serif;text-align: center;}#user-content-announcement h2{color:#007bff;margin:0 0 10px;}#user-content-announcement p{margin:0;font-size:1.1rem;color:#333;}#user-content-announcement a{color:#007bff;text-decoration:none;}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">【售】WK-HKE多语言秒合约交易所源码/虚拟货币+贵金属+外汇+盈亏控制+贷款+余额宝理财+Azure动态防封</h1>
+<div class="title-right">
+    <a href="https://wukongymw.github.io/wukongymw/" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/wukongymw/wukongymw/issues/631" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><div id="user-content-announcement"><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href="https://t.me/wukongym" rel="nofollow">点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href="https://t.me/wukongymw" rel="nofollow">点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+<div id="user-content-sc_fankui">测试反馈</div>
+<p>这是一套秒合约的交易所(微盘)，前后端都是开源的，后端代码里面有委买的逻辑，但是前端没有，估计前端的委买功能被删掉了，需要委买功能的话可以自己补上前端逻辑</p>
+<p>一共有31个产品，接口全都是 uk.yhcc.uk 自己聚合的数据，建议拿去改成稳定的接口<br>
+虚拟货币：<br>
+BTC/USDT、ETH/USDT、LINK/USDT、ADA/USDT、ETC/USDT、FIL/USDT、DOT/USDT、TRX/USDT、BCH/USDT、LTC/USDT、DCR/USDT、IOTA/USDT<br>
+外汇：<br>
+EURUSD、GBPUSD、USDJPY、AUDUSD、USDCAD、USDCHF、GBPJPY、EURJPY、EURGBP、NZDUSD<br>
+贵金属：<br>
+XAUUSD、XAGUSD、铜、镍、钯、铂金、铅、锌、铝</p>
+<p>后台订单可以控制盈亏，有全员盈利时间设置，最主要的是还做了Azure动态防封，这个功能解决的是APP内后端api被封禁的话可以动态切换后端域名，也就是反封锁功能，当然这个功能是针对前端做成了APP的，如果你用H5的话也许用不了这个模式，H5就得处理前端问题了</p>
+<p>贷款、余额宝投资理财功能也有，前端看样子整体是重构过的，K线图也挺好看，需要的可以拿去研究</p>
+<p>前端： <a href="https://ceshi127.wkym.cc/h5" rel="nofollow">https://ceshi127.wkym.cc/h5</a><br>
+账号： wukongymw<br>
+密码： 123456</p>
+<p>后台： <a href="https://ceshi127.wkym.cc/wukongymw.php" rel="nofollow">https://ceshi127.wkym.cc/wukongymw.php</a><br>
+账号： admin<br>
+密码： wukongymw.com</p>
+<div id="user-content-timibbs15">前端</div><div id="user-content-timibbs12">
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/ba061ebb0cb70ebe2b0a2be631671483.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/c263f273dd156535fe501673a75c78d57f65ba18bfe797a874b64cbb1c50bf40/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f62613036316562623063623730656265326230613262653633313637313438332e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/ba061ebb0cb70ebe2b0a2be631671483.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/dbce0d94841e3f53e067ef2c42306bf0.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/275dfe854fd0e930b6a6298ec4125be6dd7342acfc235e7e70fdfbf0a0cd5f55/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f64626365306439343834316533663533653036376566326334323330366266302e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/dbce0d94841e3f53e067ef2c42306bf0.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/9c02178790faf0e388d84dd64be4bb7f.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/1b236e1e0be250ff07134a198810712b6e842544612a500a020ed0967063cfb6/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f39633032313738373930666166306533383864383464643634626534626237662e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/9c02178790faf0e388d84dd64be4bb7f.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/ebbc971002c37f8b6a6097d2b427f360.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/981109245b8785d8a606e1670465228ad062f229f9fbdd9dcf9d111fca4d39f0/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f65626263393731303032633337663862366136303937643262343237663336302e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/ebbc971002c37f8b6a6097d2b427f360.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/ab542962dc4674020931f89b94f3fbb8.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/98323df22c64df5d56321bae9632057fe8411d1d6f3b17d0870b45411a6bd3bf/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f61623534323936326463343637343032303933316638396239346633666262382e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/ab542962dc4674020931f89b94f3fbb8.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/9dab9ebbe1766f479f2242ccd9d1ee3b.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/ca3516c165595d5e3e8b03a15c857a338b91d4686e4ae0f52024d1567a71b2cf/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f39646162396562626531373636663437396632323432636364396431656533622e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/9dab9ebbe1766f479f2242ccd9d1ee3b.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/e616e13b99ef8d3703c176793bbb8fe8.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/d25066fe474d1f85f46a5933594955d322a51684bb8fce75260f75af462cae1b/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f65363136653133623939656638643337303363313736373933626262386665382e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/e616e13b99ef8d3703c176793bbb8fe8.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/ca21a18e8bf0e71a6d9c3e126cafb86c.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/7a84fecf4cd1cb347906d1ceefcf76985614dcce60f2b17c86fd69d46280ee83/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f63613231613138653862663065373161366439633365313236636166623836632e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/ca21a18e8bf0e71a6d9c3e126cafb86c.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/65656f3ebcfdd9203392bb53ea602ffc.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/4474afbdd1b7d298216f07290e56eed66dd971ef67ae12d558e04e19abe11396/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f36353635366633656263666464393230333339326262353365613630326666632e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/65656f3ebcfdd9203392bb53ea602ffc.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/d3d837729e24f37d00dd131bfa613f31.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/37e5e9e463328d2eaeb20cbd06a253a481485da1283fa96d39c539bc5e270101/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f64336438333737323965323466333764303064643133316266613631336633312e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/d3d837729e24f37d00dd131bfa613f31.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/9a443c62da1628724af7d3e89df7dfdd.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/c16e3140b623c8fcc2d4083e34f6d4cba639cd435d7fe5ea66d6dcef115b50f6/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f39613434336336326461313632383732346166376433653839646637646664642e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/9a443c62da1628724af7d3e89df7dfdd.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/19dd24bad367b34ab371dd6dff2fbe54.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/64f1409a784842921c59ebb2b48ba414e3c78f23fdf44ff70b278b79fb53f2f2/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f31396464323462616433363762333461623337316464366466663266626535342e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/19dd24bad367b34ab371dd6dff2fbe54.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/49bcbe85c9b6223522866377733b985e.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/26791aeb281fbe2ad04aa59bf4563a092f0b936a50e4bde1c12279290c4d0019/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f34396263626538356339623632323335323238363633373737333362393835652e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/49bcbe85c9b6223522866377733b985e.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/d84f1922a84c52630931698ebf86aa6d.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/182b6efcfb049ba26d0d445b9d786f77558a314cebaff8ead3e41b9a9a9274d7/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f64383466313932326138346335323633303933313639386562663836616136642e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/d84f1922a84c52630931698ebf86aa6d.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/c6ee2f66637a9d0fa1f49076aa54d2d7.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/f883269102303d0ea4607de5b116166b3ec385123a3f146c5f4fc53137079326/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f63366565326636363633376139643066613166343930373661613534643264372e6a7067" alt="交易所 微盘" width="491" height="1062" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/c6ee2f66637a9d0fa1f49076aa54d2d7.jpg" style="max-width: 100%; height: auto; max-height: 1062px;; aspect-ratio: 491 / 1062; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+</div>
+<div id="user-content-timibbs15">后台</div><div id="user-content-timibbs12">
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/101e9af44f636f047467fb07b548018c.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/e95fdd0551845df223319e304afa8ef5516637404914a7400cf83636f5c82c7a/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f31303165396166343466363336663034373436376662303762353438303138632e6a7067" alt="交易所 微盘" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/101e9af44f636f047467fb07b548018c.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc2520b39db6cd42db34d5819ad7e033.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/bc7053d923fa3c698ff80b9ce9a94bb1e789bb82efd7b6d2768abaac3a157342/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f63633235323062333964623663643432646233346435383139616437653033332e6a7067" alt="交易所 微盘" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc2520b39db6cd42db34d5819ad7e033.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/a42aafe95929a75e76df30c399e9a1b2.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/8a336bd33cad5a17010fa43b85b7ea441c98e857508d976ad62d80c271c05eba/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f61343261616665393539323961373565373664663330633339396539613162322e6a7067" alt="交易所 微盘" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/a42aafe95929a75e76df30c399e9a1b2.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/c46f48c4d7584b95d99b22da5a8be307.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/8dca63fca957e56f9a4d780402f8a5b342d74e57e24f7291bbe0d46f7978493a/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f63343666343863346437353834623935643939623232646135613862653330372e6a7067" alt="交易所 微盘" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/c46f48c4d7584b95d99b22da5a8be307.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f1371554828fc3a5d17b16ab5078126d.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/59c3a81a0ecf2ccd165f16516bb0d50abddc4387705681f85d09360e6244ddac/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f66313337313535343832386663336135643137623136616235303738313236642e6a7067" alt="交易所 微盘" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f1371554828fc3a5d17b16ab5078126d.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/66622e3e4d56d7240ad43fed3f81d1b1.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/f75582ff167f9aa82aae0d6782cf345b84fe1403a076fbcd3bd5ed0fc06e91aa/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f36363632326533653464353664373234306164343366656433663831643162312e6a7067" alt="交易所 微盘" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/66622e3e4d56d7240ad43fed3f81d1b1.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+</div>
+</div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处-悟空源码网 wukongymw.com</div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wukongymw.github.io/wukongymw/">悟空源码网 wkym.cc</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("02/16/2021"!=""){
+    var startSite=new Date("02/16/2021");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</html>
