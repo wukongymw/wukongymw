@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://pub-e48ea883b4bd4aab9489ad31860393df.r2.dev/favicon.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_fankui'>测试反馈</div>
+
+功能非常多的一套交易所系统，修复了好几天，清理了所有的后门也修复了bug，购买后可以免费修复未测试出的bug
+
+有秒合约交易、期权交易，秒合约时间、期权交易手数倍数都可以在后台自由设置，平台币可以设置K线，其他币种可以设置K线插针
+
+一共有6个分类，74个产品，其中股票和ETF没有对接产品，也有些产品没有开放，可以自己根据接口来增加和减少币种，外汇、期货、贵金属用的是免费的数据接口： https://wktick.com ，我们自己的平台，对接的都是一手稳定接口，终身会员可以找我免费升级到专业版套餐（价值99U一个月）
+
+外汇（26个）： AUDCAD、AUDJPY、AUDNZD、AUDUSD、CADJPY、CHFJPY、EURAUD、EURCAD、EURCHF、EURGBP、EURJPY、EURNZD、EURUSD、GBPAUD、GBPCAD、GBPCHF、GBPJPY、GBPNZD、GBPUSD、NZDUSD、USDCAD、USDCHF、USDCNH、USDHKD、USDJPY、USDSGD 
+股票（1个）： SOHU 
+期货（17个）： BO、C、CL、CT、GC、HG、HO、KC、LHC、NG、OIL、RS、S、SM、W、XAG、XAU 
+虚拟货币（16个）： ADA、BCH、BTC、ELA、EOS、ETC、ETH、IOTA、LTC、NAS、NEO、QTUM、SNT、USDT、WICC、XRP 
+贵金属（6个）： XAGUSD、XALUSD、XAUUSD、XNIUSD、XPBUSD、XPTUSD 
+ETF（1个）： VPU
+
+还有新币申购、ai量化理财、借贷这几个功能，同时也支持dapp登录（E链）和模拟账户登录，详细测试的，功能还不错，全开源产品
+
+前端： https://ceshi129.wkym.cc/h5
+账号： wukongymw@gmail.com
+密码： 123456
+
+后台： https://ceshi129.wkym.cc/wukongymw
+账号： admin
+密码： wukongymw.com
+
+<div id='timibbs15'>前端</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/1405731cf65b51853dbdf60293801fa5.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/1405731cf65b51853dbdf60293801fa5.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9e7476b44caf4af93207b664993a7a7.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9e7476b44caf4af93207b664993a7a7.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/8e0f00f123f96455553bfc7bb3e30c38.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/8e0f00f123f96455553bfc7bb3e30c38.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='454' height='1069' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc1c9dc0fde4f39d5c2be734c9fe85cb.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc1c9dc0fde4f39d5c2be734c9fe85cb.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1066' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e4997a18601a06c8710d9f25900b2cb8.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e4997a18601a06c8710d9f25900b2cb8.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='450' height='1070' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9faea4eabac264a9f55d03d9a462575.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9faea4eabac264a9f55d03d9a462575.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1069' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f2874de8b67f17d6ddfd5ea805d70700.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f2874de8b67f17d6ddfd5ea805d70700.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1065' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bd4080b079d0c517fda96b39a98d1e99.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bd4080b079d0c517fda96b39a98d1e99.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f0c2598759e4b2b2f64149d38d801fc1.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f0c2598759e4b2b2f64149d38d801fc1.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='454' height='1066' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/66d13cbb1145385132c9f22227e7361b.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/66d13cbb1145385132c9f22227e7361b.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1067' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e2ab86ac6989cab31c2ce001500ac6de.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e2ab86ac6989cab31c2ce001500ac6de.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/49438b0e74c835a31c128d28bb986e38.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/49438b0e74c835a31c128d28bb986e38.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='456' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7196f0d74c61dc4c5112cceeaa842f16.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7196f0d74c61dc4c5112cceeaa842f16.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1067' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/999176e2a49561cd14c6055cdd738a13.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/999176e2a49561cd14c6055cdd738a13.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/efee97e2d6964c2a1ec2642eba31f6b8.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/efee97e2d6964c2a1ec2642eba31f6b8.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1066' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3bbed9e0c1f2ec8c8e5e220b16d4542d.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3bbed9e0c1f2ec8c8e5e220b16d4542d.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='456' height='1065' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bee9bc0c117c408ce2fd69679a4c5178.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bee9bc0c117c408ce2fd69679a4c5178.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1069' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7a038e318d5250d5485eb5abafc00bd9.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7a038e318d5250d5485eb5abafc00bd9.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='456' height='1066' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+</div>
+
+<div id='timibbs15'>后台</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7e1ebb45f923f1ff78aae3aa0d15436f.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7e1ebb45f923f1ff78aae3aa0d15436f.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/26b230b7e0cdf9fa7147362d40d0b95c.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/26b230b7e0cdf9fa7147362d40d0b95c.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/2d8cb134908f74c6e04daf71572abc3e.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/2d8cb134908f74c6e04daf71572abc3e.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/15a494fef770e8114274c46791f8c3ac.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/15a494fef770e8114274c46791f8c3ac.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bb87ef72d44649ea0cd9eea572b99a9c.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bb87ef72d44649ea0cd9eea572b99a9c.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3049385b337af7823120ace5f9e5a09d.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3049385b337af7823120ace5f9e5a09d.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d1a0fcd05088d1a63876f5bc37bef5dd.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d1a0fcd05088d1a63876f5bc37bef5dd.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/a1b0ce1e3d0cec0f28fc8767fa7c4d06.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/a1b0ce1e3d0cec0f28fc8767fa7c4d06.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/fe8545868173aa9138a5bf433da77390.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/fe8545868173aa9138a5bf433da77390.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e81312846288e9f4c17bd55d6299486f.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e81312846288e9f4c17bd55d6299486f.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3e0faf9850d912e0d5b8dd11016fbc4e.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3e0faf9850d912e0d5b8dd11016fbc4e.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ec351a69ec8a7129e49d8bfd467992f8.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ec351a69ec8a7129e49d8bfd467992f8.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9d4a081d73f52bfbf518e1a0fb3417d.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9d4a081d73f52bfbf518e1a0fb3417d.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cb2604808d9daed7522caa2a0c7f174c.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cb2604808d9daed7522caa2a0c7f174c.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/341c9373d0b997be9bf10e9f30423d81.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/341c9373d0b997be9bf10e9f30423d81.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+</div>
+
+
+<!-- ##{'timestamp':1785258067}## -->。">
+<meta property="og:title" content="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷">
+<meta property="og:description" content="<div id='announcement'><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href='https://t.me/wukongym' target='_blank'>点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href='https://t.me/wukongymw' target='_blank'>点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+
+<div id='sc_fankui'>测试反馈</div>
+
+功能非常多的一套交易所系统，修复了好几天，清理了所有的后门也修复了bug，购买后可以免费修复未测试出的bug
+
+有秒合约交易、期权交易，秒合约时间、期权交易手数倍数都可以在后台自由设置，平台币可以设置K线，其他币种可以设置K线插针
+
+一共有6个分类，74个产品，其中股票和ETF没有对接产品，也有些产品没有开放，可以自己根据接口来增加和减少币种，外汇、期货、贵金属用的是免费的数据接口： https://wktick.com ，我们自己的平台，对接的都是一手稳定接口，终身会员可以找我免费升级到专业版套餐（价值99U一个月）
+
+外汇（26个）： AUDCAD、AUDJPY、AUDNZD、AUDUSD、CADJPY、CHFJPY、EURAUD、EURCAD、EURCHF、EURGBP、EURJPY、EURNZD、EURUSD、GBPAUD、GBPCAD、GBPCHF、GBPJPY、GBPNZD、GBPUSD、NZDUSD、USDCAD、USDCHF、USDCNH、USDHKD、USDJPY、USDSGD 
+股票（1个）： SOHU 
+期货（17个）： BO、C、CL、CT、GC、HG、HO、KC、LHC、NG、OIL、RS、S、SM、W、XAG、XAU 
+虚拟货币（16个）： ADA、BCH、BTC、ELA、EOS、ETC、ETH、IOTA、LTC、NAS、NEO、QTUM、SNT、USDT、WICC、XRP 
+贵金属（6个）： XAGUSD、XALUSD、XAUUSD、XNIUSD、XPBUSD、XPTUSD 
+ETF（1个）： VPU
+
+还有新币申购、ai量化理财、借贷这几个功能，同时也支持dapp登录（E链）和模拟账户登录，详细测试的，功能还不错，全开源产品
+
+前端： https://ceshi129.wkym.cc/h5
+账号： wukongymw@gmail.com
+密码： 123456
+
+后台： https://ceshi129.wkym.cc/wukongymw
+账号： admin
+密码： wukongymw.com
+
+<div id='timibbs15'>前端</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/1405731cf65b51853dbdf60293801fa5.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/1405731cf65b51853dbdf60293801fa5.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9e7476b44caf4af93207b664993a7a7.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9e7476b44caf4af93207b664993a7a7.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/8e0f00f123f96455553bfc7bb3e30c38.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/8e0f00f123f96455553bfc7bb3e30c38.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='454' height='1069' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc1c9dc0fde4f39d5c2be734c9fe85cb.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc1c9dc0fde4f39d5c2be734c9fe85cb.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1066' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e4997a18601a06c8710d9f25900b2cb8.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e4997a18601a06c8710d9f25900b2cb8.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='450' height='1070' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9faea4eabac264a9f55d03d9a462575.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9faea4eabac264a9f55d03d9a462575.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1069' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f2874de8b67f17d6ddfd5ea805d70700.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f2874de8b67f17d6ddfd5ea805d70700.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1065' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bd4080b079d0c517fda96b39a98d1e99.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bd4080b079d0c517fda96b39a98d1e99.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f0c2598759e4b2b2f64149d38d801fc1.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f0c2598759e4b2b2f64149d38d801fc1.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='454' height='1066' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/66d13cbb1145385132c9f22227e7361b.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/66d13cbb1145385132c9f22227e7361b.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1067' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e2ab86ac6989cab31c2ce001500ac6de.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e2ab86ac6989cab31c2ce001500ac6de.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/49438b0e74c835a31c128d28bb986e38.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/49438b0e74c835a31c128d28bb986e38.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='456' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7196f0d74c61dc4c5112cceeaa842f16.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7196f0d74c61dc4c5112cceeaa842f16.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1067' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/999176e2a49561cd14c6055cdd738a13.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/999176e2a49561cd14c6055cdd738a13.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1068' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/efee97e2d6964c2a1ec2642eba31f6b8.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/efee97e2d6964c2a1ec2642eba31f6b8.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='455' height='1066' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3bbed9e0c1f2ec8c8e5e220b16d4542d.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3bbed9e0c1f2ec8c8e5e220b16d4542d.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='456' height='1065' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bee9bc0c117c408ce2fd69679a4c5178.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bee9bc0c117c408ce2fd69679a4c5178.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='457' height='1069' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7a038e318d5250d5485eb5abafc00bd9.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7a038e318d5250d5485eb5abafc00bd9.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='456' height='1066' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+</div>
+
+<div id='timibbs15'>后台</div><div id='timibbs12'>
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7e1ebb45f923f1ff78aae3aa0d15436f.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/7e1ebb45f923f1ff78aae3aa0d15436f.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/26b230b7e0cdf9fa7147362d40d0b95c.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/26b230b7e0cdf9fa7147362d40d0b95c.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/2d8cb134908f74c6e04daf71572abc3e.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/2d8cb134908f74c6e04daf71572abc3e.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/15a494fef770e8114274c46791f8c3ac.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/15a494fef770e8114274c46791f8c3ac.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bb87ef72d44649ea0cd9eea572b99a9c.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/bb87ef72d44649ea0cd9eea572b99a9c.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3049385b337af7823120ace5f9e5a09d.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3049385b337af7823120ace5f9e5a09d.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d1a0fcd05088d1a63876f5bc37bef5dd.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/d1a0fcd05088d1a63876f5bc37bef5dd.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/a1b0ce1e3d0cec0f28fc8767fa7c4d06.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/a1b0ce1e3d0cec0f28fc8767fa7c4d06.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/fe8545868173aa9138a5bf433da77390.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/fe8545868173aa9138a5bf433da77390.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e81312846288e9f4c17bd55d6299486f.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/e81312846288e9f4c17bd55d6299486f.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3e0faf9850d912e0d5b8dd11016fbc4e.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/3e0faf9850d912e0d5b8dd11016fbc4e.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ec351a69ec8a7129e49d8bfd467992f8.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/ec351a69ec8a7129e49d8bfd467992f8.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9d4a081d73f52bfbf518e1a0fb3417d.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9d4a081d73f52bfbf518e1a0fb3417d.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cb2604808d9daed7522caa2a0c7f174c.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/cb2604808d9daed7522caa2a0c7f174c.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+
+<a href='https://cdn.wukongymw.com/wp-content/uploads/2026/05/341c9373d0b997be9bf10e9f30423d81.jpg' target='_blank' rel='noopener'>
+  <img src='https://cdn.wukongymw.com/wp-content/uploads/2026/05/341c9373d0b997be9bf10e9f30423d81.jpg' alt='【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷' width='2560' height='1199' loading='lazy' decoding='async' class='aligncenter size-full' / style='border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto'>
+</a>
+</div>
+
+
+<!-- ##{'timestamp':1785258067}## -->。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wukongymw.github.io/wukongymw//post/%E3%80%90-shou-%E3%80%91Coinbase-duo-yu-yan-miao-he-yue-jiao-yi-suo-yuan-ma--dapp-deng-lu-%2B-mo-ni-zhang-hao-%2BK-xian-cha-zhen-%2B-ping-tai-bi-kong-zhi-%2B-ying-kui-kong-zhi-%2Bai-liang-hua-%2B-jie-dai.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Meekdai/meekdai.github.io/logo64.jpg">
+<title>【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+<style>.dian{display:flex}.dian>a{margin:10px;color:#ff5722}.downurl>.active{color:#ef093a;font-size:15pt}.help>p{font-size:1.5rem}.cur{color:#ef093a;font-size:15pt}#user-content-ul_Address li>a{margin:10px;color:#ff5722}#user-content-ul_Address li{list-style:none;margin-left:-42px;display:flex}#user-content-ul_Address .address-wrap .on{list-style:none}ul>li{list-style:none}#user-content-sc_notice{color:#fff;background:#034cff url('/static/img/sc_notice.png') -1px -1px no-repeat;border:1px solid #034cff;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px;border-radius:10px}#user-content-sc_warn{color:#ad9948;background:#fff4b9 url('/static/img/sc_warn.png') -1px -1px no-repeat;border:1px solid #eac946;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_error{color:#fff;background:#00bd3f;overflow:hidden;margin:10px 0px;padding:12px 15px 0px 35px;border-radius:10px;height:78px;display:inline-table;}#user-content-sc_error p{line-height:1;}#user-content-sc_error a{color:#000000;}#user-content-sc_tips{color:#777;background:#eaeaea url('/static/img/sc_tips.png') -1px -1px no-repeat;border:1px solid #ccc;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_blue{color:#1ba1e2;background:rgba(27,161,226,0.26) url('/static/img/sc_blue.png') -1px -1px no-repeat;border:1px solid #1ba1e2;overflow:hidden;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_black{border-width:1px 4px 4px 1px;border-style:solid;border-color:#3e3e3e;margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_xuk{border:2px dashed rgb(41,170,227);background-color:rgb(248,247,245);margin:10px 0;padding:15px 15px 15px 35px}#user-content-sc_lvb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #05B536;background:#FFF}#user-content-sc_redb{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #ED0505;background:#FFF}#user-content-sc_organge{margin:10px 0;padding:10px 15px;border:1px solid #e3e3e3;border-left:2px solid #EC8006;background:#FFF}#user-content-sc_fankui{color:#fff;background:#00bd3f url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #00bd3f;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_shuoming{color:#fff;background:#ff4545 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #ff4545;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}#user-content-sc_jietu{color:#fff;background:#35b8e0 url('/static/img/sc_error.png') -1px -1px no-repeat;border:1px solid #35b8e0;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin-bottom:8px}.article-content p{padding:15px;background:#f8f9fa;border-radius:5px}#user-content-timibbs12{display:flex;flex-wrap:wrap}#user-content-timibbs12 p{display:contents;width:33.33%}#user-content-timibbs15{color:#ffffff;background:#FF5722;border:1px solid #FF5722;overflow:hidden;padding:6px;border-radius:5px;width:6rem;text-align:center;font-size:13pt;margin:3% 43%}.post-content .aligncenter{border-radius:12px;padding:5px;display:block;clear:both;margin:0 auto}#user-content-timibbs12 a{color:#03a9f4;flex:1 0 33.33%;padding:3px;display:flex;margin-bottom:5px;}#user-content-sc_error b{display:block;margin-top:5px;}#user-content-announcement{border:1px solid #ddd;padding:20px;margin:30px 0 10px;background-color:#f9f9f9;border-radius:15px;font-family:Arial,sans-serif;text-align: center;}#user-content-announcement h2{color:#007bff;margin:0 0 10px;}#user-content-announcement p{margin:0;font-size:1.1rem;color:#333;}#user-content-announcement a{color:#007bff;text-decoration:none;}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷</h1>
+<div class="title-right">
+    <a href="https://wukongymw.github.io/wukongymw/" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/wukongymw/wukongymw/issues/636" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><div id="user-content-announcement"><div>
+ <h2>重要公告</h2>
+    <p>
+        加入我们的 Telegram 群组以获取最新消息和支持！ 
+        <br>
+        📢 <a href="https://t.me/wukongym" rel="nofollow">点击这里加入 TG 群</a>
+        <br><br>
+        如需帮助，请联系唯一客服：
+        <br>
+        🤖 <a href="https://t.me/wukongymw" rel="nofollow">点击这里联系客服</a>
+    </p>
+  </div>
+</div>
+<div id="user-content-sc_fankui">测试反馈</div>
+<p>功能非常多的一套交易所系统，修复了好几天，清理了所有的后门也修复了bug，购买后可以免费修复未测试出的bug</p>
+<p>有秒合约交易、期权交易，秒合约时间、期权交易手数倍数都可以在后台自由设置，平台币可以设置K线，其他币种可以设置K线插针</p>
+<p>一共有6个分类，74个产品，其中股票和ETF没有对接产品，也有些产品没有开放，可以自己根据接口来增加和减少币种，外汇、期货、贵金属用的是免费的数据接口： <a href="https://wktick.com" rel="nofollow">https://wktick.com</a> ，我们自己的平台，对接的都是一手稳定接口，终身会员可以找我免费升级到专业版套餐（价值99U一个月）</p>
+<p>外汇（26个）： AUDCAD、AUDJPY、AUDNZD、AUDUSD、CADJPY、CHFJPY、EURAUD、EURCAD、EURCHF、EURGBP、EURJPY、EURNZD、EURUSD、GBPAUD、GBPCAD、GBPCHF、GBPJPY、GBPNZD、GBPUSD、NZDUSD、USDCAD、USDCHF、USDCNH、USDHKD、USDJPY、USDSGD<br>
+股票（1个）： SOHU<br>
+期货（17个）： BO、C、CL、CT、GC、HG、HO、KC、LHC、NG、OIL、RS、S、SM、W、XAG、XAU<br>
+虚拟货币（16个）： ADA、BCH、BTC、ELA、EOS、ETC、ETH、IOTA、LTC、NAS、NEO、QTUM、SNT、USDT、WICC、XRP<br>
+贵金属（6个）： XAGUSD、XALUSD、XAUUSD、XNIUSD、XPBUSD、XPTUSD<br>
+ETF（1个）： VPU</p>
+<p>还有新币申购、ai量化理财、借贷这几个功能，同时也支持dapp登录（E链）和模拟账户登录，详细测试的，功能还不错，全开源产品</p>
+<p>前端： <a href="https://ceshi129.wkym.cc/h5" rel="nofollow">https://ceshi129.wkym.cc/h5</a><br>
+账号： <a href="mailto:wukongymw@gmail.com">wukongymw@gmail.com</a><br>
+密码： 123456</p>
+<p>后台： <a href="https://ceshi129.wkym.cc/wukongymw" rel="nofollow">https://ceshi129.wkym.cc/wukongymw</a><br>
+账号： admin<br>
+密码： wukongymw.com</p>
+<div id="user-content-timibbs15">前端</div><div id="user-content-timibbs12">
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/1405731cf65b51853dbdf60293801fa5.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/37281036a120d5785e40aa74810af1d5dc651aceb5a7cc87f8711de65d3ecb12/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f31343035373331636636356235313835336462646636303239333830316661352e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="457" height="1068" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/1405731cf65b51853dbdf60293801fa5.jpg" style="max-width: 100%; height: auto; max-height: 1068px;; aspect-ratio: 457 / 1068; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9e7476b44caf4af93207b664993a7a7.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/80ee4eb9504cd8d5fa46d61d65dda685642e99c3e875882423dfc03619f78754/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f66396537343736623434636166346166393332303762363634393933613761372e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="457" height="1068" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9e7476b44caf4af93207b664993a7a7.jpg" style="max-width: 100%; height: auto; max-height: 1068px;; aspect-ratio: 457 / 1068; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/8e0f00f123f96455553bfc7bb3e30c38.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/0270032cfdbdbf3f19f0d1d64045d8e9f7e361ba68488f27e0086eee3a6a3f15/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f38653066303066313233663936343535353533626663376262336533306333382e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="454" height="1069" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/8e0f00f123f96455553bfc7bb3e30c38.jpg" style="max-width: 100%; height: auto; max-height: 1069px;; aspect-ratio: 454 / 1069; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc1c9dc0fde4f39d5c2be734c9fe85cb.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/3c3d8f48ac691d08a2a2051ec07105b899bec3dac820c2396b805e3fd5bbccab/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f63633163396463306664653466333964356332626537333463396665383563622e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="455" height="1066" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/cc1c9dc0fde4f39d5c2be734c9fe85cb.jpg" style="max-width: 100%; height: auto; max-height: 1066px;; aspect-ratio: 455 / 1066; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/e4997a18601a06c8710d9f25900b2cb8.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/56e39677dc9194d2f140c846cba512bc51a035a7d1c45cfc91e361cc28a9b4cf/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f65343939376131383630316130366338373130643966323539303062326362382e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="450" height="1070" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/e4997a18601a06c8710d9f25900b2cb8.jpg" style="max-width: 100%; height: auto; max-height: 1070px;; aspect-ratio: 450 / 1070; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9faea4eabac264a9f55d03d9a462575.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/6ae2876bb816e562aad039322f263325c79b680862cd9b0cf5edece800c510ab/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f66396661656134656162616332363461396635356430336439613436323537352e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="455" height="1069" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9faea4eabac264a9f55d03d9a462575.jpg" style="max-width: 100%; height: auto; max-height: 1069px;; aspect-ratio: 455 / 1069; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f2874de8b67f17d6ddfd5ea805d70700.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/cd6ce4f90bf34f995e6d37f205e6fc3aced8c2b241b1bfb2564843e1fffb317f/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f66323837346465386236376631376436646466643565613830356437303730302e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="455" height="1065" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f2874de8b67f17d6ddfd5ea805d70700.jpg" style="max-width: 100%; height: auto; max-height: 1065px;; aspect-ratio: 455 / 1065; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/bd4080b079d0c517fda96b39a98d1e99.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/4ba71088582c27125e0acb1340fa7455334773ca57c0f391ed00e53bff12f7cb/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f62643430383062303739643063353137666461393662333961393864316539392e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="457" height="1068" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/bd4080b079d0c517fda96b39a98d1e99.jpg" style="max-width: 100%; height: auto; max-height: 1068px;; aspect-ratio: 457 / 1068; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f0c2598759e4b2b2f64149d38d801fc1.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/f5fdd1b136a332f6f7c4bf5ffbe8c6e52b6661f47149fe5b9adb680c1a9d2f08/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f66306332353938373539653462326232663634313439643338643830316663312e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="454" height="1066" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f0c2598759e4b2b2f64149d38d801fc1.jpg" style="max-width: 100%; height: auto; max-height: 1066px;; aspect-ratio: 454 / 1066; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/66d13cbb1145385132c9f22227e7361b.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/0228685d57c4f3e44da6650360af601f13ee9cbccd6994d59e900848544545e0/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f36366431336362623131343533383531333263396632323232376537333631622e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="455" height="1067" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/66d13cbb1145385132c9f22227e7361b.jpg" style="max-width: 100%; height: auto; max-height: 1067px;; aspect-ratio: 455 / 1067; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/e2ab86ac6989cab31c2ce001500ac6de.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/42e91c546e468b7add43ba1e82d981df6ae10eab92b0a3b81f5c117ef62b61f1/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f65326162383661633639383963616233316332636530303135303061633664652e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="457" height="1068" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/e2ab86ac6989cab31c2ce001500ac6de.jpg" style="max-width: 100%; height: auto; max-height: 1068px;; aspect-ratio: 457 / 1068; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/49438b0e74c835a31c128d28bb986e38.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/0a3ed838100b2c9aaa99706bb924ba952d0376602fb0a54c32126cdf57096fa5/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f34393433386230653734633833356133316331323864323862623938366533382e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="456" height="1068" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/49438b0e74c835a31c128d28bb986e38.jpg" style="max-width: 100%; height: auto; max-height: 1068px;; aspect-ratio: 456 / 1068; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/7196f0d74c61dc4c5112cceeaa842f16.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/dbff209081657a83568828587188f9bf6f8b9654f82fc8a4b7ab0ee070cfeb8f/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f37313936663064373463363164633463353131326363656561613834326631362e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="455" height="1067" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/7196f0d74c61dc4c5112cceeaa842f16.jpg" style="max-width: 100%; height: auto; max-height: 1067px;; aspect-ratio: 455 / 1067; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/999176e2a49561cd14c6055cdd738a13.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/ffa87ea4b6a51a059300f7bf643a1534579691b36d5e1e2c2b84552e92b217f4/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f39393931373665326134393536316364313463363035356364643733386131332e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="457" height="1068" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/999176e2a49561cd14c6055cdd738a13.jpg" style="max-width: 100%; height: auto; max-height: 1068px;; aspect-ratio: 457 / 1068; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/efee97e2d6964c2a1ec2642eba31f6b8.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/6991e7864a1da8d126f6e4c4b81b24024611a321f864b86ca65505611963edd6/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f65666565393765326436393634633261316563323634326562613331663662382e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="455" height="1066" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/efee97e2d6964c2a1ec2642eba31f6b8.jpg" style="max-width: 100%; height: auto; max-height: 1066px;; aspect-ratio: 455 / 1066; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/3bbed9e0c1f2ec8c8e5e220b16d4542d.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/6a5a580d40d834e3cc73e97b94dd762b159e85ed9b6909a9d35cae49b85abb4a/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f33626265643965306331663265633863386535653232306231366434353432642e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="456" height="1065" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/3bbed9e0c1f2ec8c8e5e220b16d4542d.jpg" style="max-width: 100%; height: auto; max-height: 1065px;; aspect-ratio: 456 / 1065; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/bee9bc0c117c408ce2fd69679a4c5178.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/e17edbccc5b5f397ba2dc5e9aa2e0ebbf32f636c1f26fa6a2e0c635d7a29a06e/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f62656539626330633131376334303863653266643639363739613463353137382e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="457" height="1069" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/bee9bc0c117c408ce2fd69679a4c5178.jpg" style="max-width: 100%; height: auto; max-height: 1069px;; aspect-ratio: 457 / 1069; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/7a038e318d5250d5485eb5abafc00bd9.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/a30d39f790332477759aadac39c8899a543119aceaad1d9ac7554c83be9dd7a9/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f37613033386533313864353235306435343835656235616261666330306264392e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="456" height="1066" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/7a038e318d5250d5485eb5abafc00bd9.jpg" style="max-width: 100%; height: auto; max-height: 1066px;; aspect-ratio: 456 / 1066; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+</div>
+<div id="user-content-timibbs15">后台</div><div id="user-content-timibbs12">
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/7e1ebb45f923f1ff78aae3aa0d15436f.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/11641b2edd7f7eeb8c4c474be59a68aefa67ee8c8c14d3c990bd67df7fa1685e/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f37653165626234356639323366316666373861616533616130643135343336662e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/7e1ebb45f923f1ff78aae3aa0d15436f.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/26b230b7e0cdf9fa7147362d40d0b95c.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/d1120f1afb40527ced66aea6f722ef67115eebc4f71620829fc4ae140953295a/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f32366232333062376530636466396661373134373336326434306430623935632e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/26b230b7e0cdf9fa7147362d40d0b95c.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/2d8cb134908f74c6e04daf71572abc3e.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/66b1fee0edcac575bd0875e474f126efa6b7ca5596ba8c24dada2d0b233f696e/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f32643863623133343930386637346336653034646166373135373261626333652e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/2d8cb134908f74c6e04daf71572abc3e.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/15a494fef770e8114274c46791f8c3ac.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/0905a913a20ce05be1409bf5d4612a0f0b517c8fdc3dd3cf29e42610da58ffc1/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f31356134393466656637373065383131343237346334363739316638633361632e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/15a494fef770e8114274c46791f8c3ac.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/bb87ef72d44649ea0cd9eea572b99a9c.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/cd29635a94d9a72993843a183e2878788a764a89ddc22e47dda66659c14286cb/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f62623837656637326434343634396561306364396565613537326239396139632e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/bb87ef72d44649ea0cd9eea572b99a9c.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/3049385b337af7823120ace5f9e5a09d.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/38d6127e81fdbe2c619a67a2e7884cea579c8a81216ce80fe498ec8ff746509f/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f33303439333835623333376166373832333132306163653566396535613039642e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/3049385b337af7823120ace5f9e5a09d.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/d1a0fcd05088d1a63876f5bc37bef5dd.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/df9bc4d4abce45c7c2dc841a1a1fe4dc1bcd89b109d6eafb39c928a6b2dd322e/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f64316130666364303530383864316136333837366635626333376265663564642e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/d1a0fcd05088d1a63876f5bc37bef5dd.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/a1b0ce1e3d0cec0f28fc8767fa7c4d06.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/54a8a00ac193d0a3091f5d703de74c92909aac53f15bd7721ec823046ead2ebd/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f61316230636531653364306365633066323866633837363766613763346430362e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/a1b0ce1e3d0cec0f28fc8767fa7c4d06.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/fe8545868173aa9138a5bf433da77390.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/91cf8bda9b55bb6f890abb666304b4b24679ce1795e1a23596bc453f3d7d1953/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f66653835343538363831373361613931333861356266343333646137373339302e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/fe8545868173aa9138a5bf433da77390.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/e81312846288e9f4c17bd55d6299486f.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/5378c57ca6a6ca77992d401a6f4b5f90652f4b6c1da12f4c0588852c155ae29a/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f65383133313238343632383865396634633137626435356436323939343836662e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/e81312846288e9f4c17bd55d6299486f.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/3e0faf9850d912e0d5b8dd11016fbc4e.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/302f7efd7e315348010b896233586e6bdd4adad611d5b54a605ef60b0c93cc1a/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f33653066616639383530643931326530643562386464313130313666626334652e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/3e0faf9850d912e0d5b8dd11016fbc4e.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/ec351a69ec8a7129e49d8bfd467992f8.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/af58be609093ef209560cfb9dd70b364c3ac1858f1094cb198a6c1159c473e49/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f65633335316136396563386137313239653439643862666434363739393266382e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/ec351a69ec8a7129e49d8bfd467992f8.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9d4a081d73f52bfbf518e1a0fb3417d.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/48f3f6d5ae65088f408d277ac90aa9b5242bc4a74a97fe1b4a4a0079b014b446/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f66396434613038316437336635326266626635313865316130666233343137642e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/f9d4a081d73f52bfbf518e1a0fb3417d.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/cb2604808d9daed7522caa2a0c7f174c.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/ccae62f3b06be874e1839a899be3c893a7b7fa03063f824ff58ccd2f5c5a76dc/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f63623236303438303864396461656437353232636161326130633766313734632e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/cb2604808d9daed7522caa2a0c7f174c.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+<a href="https://cdn.wukongymw.com/wp-content/uploads/2026/05/341c9373d0b997be9bf10e9f30423d81.jpg" rel="nofollow">
+  <img src="https://camo.githubusercontent.com/f9d0df59e3eb935cf3f45ebdb30f66c2afc925c7e69da992a68175e93cf205d6/68747470733a2f2f63646e2e77756b6f6e67796d772e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032362f30352f33343163393337336430623939376265396266313065396633303432336438312e6a7067" alt="【售】Coinbase多语言秒合约交易所源码/dapp登录+模拟账号+K线插针+平台币控制+盈亏控制+ai量化+借贷" width="2000" height="937" data-canonical-src="https://cdn.wukongymw.com/wp-content/uploads/2026/05/341c9373d0b997be9bf10e9f30423d81.jpg" style="max-width: 100%; height: auto; max-height: 937px;; aspect-ratio: 2000 / 937; background-color: var(--bgColor-muted); border-radius: 6px" class="js-gh-image-fallback">
+</a>
+</div>
+</div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处-悟空源码网 wukongymw.com</div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wukongymw.github.io/wukongymw/">悟空源码网 wkym.cc</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("02/16/2021"!=""){
+    var startSite=new Date("02/16/2021");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</html>
